@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia de Idiomas - Aprende inglés, portugués y más. Clases presenciales y online. Certificaciones internacionales.">
+    <meta name="keywords" content="academia idiomas, inglés, portugués, clases online, certificación">
+    <title>LinguaFlow - Academia de Idiomas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">📚</span>
+                    <span>LinguaFlow</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#cursos">Cursos</a></li>
+                    <li><a href="#metodologia">Metodología</a></li>
+                    <li><a href="#certificaciones">Certificaciones</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-nav">Prueba Gratuita</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background-animated">
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+            <div class="hero-shape"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">🌍 Idiomas para el mundo</span>
+                <h1 class="hero-title">Domina el idioma que te abra puertas</h1>
+                <p class="hero-subtitle">Clases dinámicas, profesores nativos y certificaciones internacionales</p>
+                <div class="hero-buttons">
+                    <a href="#contacto" class="btn-primary">Prueba Gratuita</a>
+                    <a href="#cursos" class="btn-secondary">Ver Cursos</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="hero-stat">
+                        <span class="stat-number">5.000+</span>
+                        <span class="stat-label">Estudiantes</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">98%</span>
+                        <span class="stat-label">Aprobados</span>
+                    </div>
+                    <div class="hero-stat">
+                        <span class="stat-number">6</span>
+                        <span class="stat-label">Idiomas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="image-placeholder" id="heroImage" style="background: linear-gradient(135deg, #2d5016 0%, #4a7c59 100%);"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Section -->
+    <section class="courses" id="cursos">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Cursos Disponibles</h2>
+                <p>Elegí el idioma que querés aprender</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card fade-in">
+                    <div class="course-flag">🇬🇧</div>
+                    <h3>Inglés</h3>
+                    <p class="course-level">Principiante a Avanzado</p>
+                    <ul class="course-features">
+                        <li>✓ Examen Cambridge incluido</li>
+                        <li>✓ Clases con nativos</li>
+                        <li>✓ Material digital</li>
+                        <li>✓ Certificación internacional</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Desde</span>
+                        <span class="price-amount">$35.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <a href="#contacto" class="btn-course">Inscribirse</a>
+                </div>
+                <div class="course-card featured fade-in">
+                    <div class="badge">Más Elegido</div>
+                    <div class="course-flag">🇪🇸</div>
+                    <h3>Español para Extranjeros</h3>
+                    <p class="course-level">A1 a C2</p>
+                    <ul class="course-features">
+                        <li>✓ Clases personalizadas</li>
+                        <li>✓ Programa flexible</li>
+                        <li>✓ Conversación diaria</li>
+                        <li>✓ Certificado SIELE</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Desde</span>
+                        <span class="price-amount">$38.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <a href="#contacto" class="btn-course btn-featured">Inscribirse</a>
+                </div>
+                <div class="course-card fade-in">
+                    <div class="course-flag">🇵🇹</div>
+                    <h3>Portugués</h3>
+                    <p class="course-level">Básico a Avanzado</p>
+                    <ul class="course-features">
+                        <li>✓ Portugués brasileño</li>
+                        <li>✓ Enfoque conversacional</li>
+                        <li>✓ Certificado CELPE-Bras</li>
+                        <li>✓ Material audiovisual</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Desde</span>
+                        <span class="price-amount">$32.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <a href="#contacto" class="btn-course">Inscribirse</a>
+                </div>
+                <div class="course-card fade-in">
+                    <div class="course-flag">🇮🇹</div>
+                    <h3>Italiano</h3>
+                    <p class="course-level">Principiante a Intermedio</p>
+                    <ul class="course-features">
+                        <li>✓ Método interactivo</li>
+                        <li>✓ Cultura italiana</li>
+                        <li>✓ Grupos reducidos</li>
+                        <li>✓ CELI para certificación</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Desde</span>
+                        <span class="price-amount">$30.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <a href="#contacto" class="btn-course">Inscribirse</a>
+                </div>
+                <div class="course-card fade-in">
+                    <div class="course-flag">🇫🇷</div>
+                    <h3>Francés</h3>
+                    <p class="course-level">Principiante a Avanzado</p>
+                    <ul class="course-features">
+                        <li>✓ Examen DELF/DALF</li>
+                        <li>✓ Cultura francesa</li>
+                        <li>✓ Clases virtuales</li>
+                        <li>✓ Material oficial</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Desde</span>
+                        <span class="price-amount">$36.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <a href="#contacto" class="btn-course">Inscribirse</a>
+                </div>
+                <div class="course-card fade-in">
+                    <div class="course-flag">🇩🇪</div>
+                    <h3>Alemán</h3>
+                    <p class="course-level">A1 a B2</p>
+                    <ul class="course-features">
+                        <li>✓ Certificación Goethe</li>
+                        <li>✓ Enfoque práctico</li>
+                        <li>✓ Clases intensivas</li>
+                        <li>✓ Material Goethe Institut</li>
+                    </ul>
+                    <div class="course-price">
+                        <span class="price-label">Desde</span>
+                        <span class="price-amount">$40.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <a href="#contacto" class="btn-course">Inscribirse</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Metodología Section -->
+    <section class="methodology" id="metodologia">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestra Metodología</h2>
+                <p>Aprendé de forma natural y efectiva</p>
+            </div>
+            <div class="method-grid">
+                <div class="method-card fade-in">
+                    <div class="method-icon">🎯</div>
+                    <h3>Clases Dinámicas</h3>
+                    <p>Uso constante del idioma, conversación desde el primer día</p>
+                </div>
+                <div class="method-card fade-in">
+                    <div class="method-icon">👥</div>
+                    <h3>Grupos Reducidos</h3>
+                    <p>Máximo 8 estudiantes para atención personalizada</p>
+                </div>
+                <div class="method-card fade-in">
+                    <div class="method-icon">🌐</div>
+                    <h3>Profesores Nativos</h3>
+                    <p>Aprendé el idioma de quienes lo hablan todos los días</p>
+                </div>
+                <div class="method-card fade-in">
+                    <div class="method-icon">📱</div>
+                    <h3>Plataforma Digital</h3>
+                    <p>Acceso las 24hs a material y ejercicios interactivos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificaciones Section -->
+    <section class="certifications" id="certificaciones">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Certificaciones Internacionales</h2>
+                <p>Validá tu nivel con certificados reconocidos mundialmente</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card fade-in">
+                    <div class="cert-logo">🇬🇧</div>
+                    <h3>Cambridge English</h3>
+                    <p>Exámenes oficiales para certificar tu nivel de inglés</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-logo">🇪🇸</div>
+                    <h3>SIELE</h3>
+                    <p>Sistema Internacional de Certificación del Español</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-logo">🇫🇷</div>
+                    <h3>DELF/DALF</h3>
+                    <p>Certificación oficial del francés</p>
+                </div>
+                <div class="cert-card fade-in">
+                    <div class="cert-logo">🇩🇪</div>
+                    <h3>Goethe Institut</h3>
+                    <p>Certificación reconocida internacionalmente</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h2>Empeza hoy tu aprendizaje</h2>
+                    <p>Una consulta gratuita te espera</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">📱</div>
+                            <h3>WhatsApp</h3>
+                            <p>+54 9 11 2345-6789</p>
+                            <a href="https://wa.me/5491123456789?text=Hola%20quiero%20una%20prueba%20gratuita" class="btn-contact" target="_blank">Escribir</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>hola@linguaflow.com.ar</p>
+                            <a href="mailto:hola@linguaflow.com.ar" class="btn-contact">Enviar Email</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <h3>Sedes</h3>
+                            <p>Palermo y Belgrano, CABA</p>
+                            <a href="https://goo.gl/maps/..." class="btn-contact" target="_blank">Ver Mapa</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">🕒</div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Vie: 9:00 a 21:00<br>Sáb: 9:00 a 13:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Solicitá tu clase de prueba</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="language">Idioma de interés</label>
+                            <select id="language" name="language" required>
+                                <option value="">Selecciona un idioma</option>
+                                <option value="ingles">Inglés</option>
+                                <option value="espanol">Español para Extranjeros</option>
+                                <option value="portugues">Portugués</option>
+                                <option value="italiano">Italiano</option>
+                                <option value="frances">Francés</option>
+                                <option value="aleman">Alemán</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Solicitar Prueba Gratuita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491123456789?text=Hola%20quiero%20una%20prueba%20gratuita" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
+            <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">📚</span>
+                        <span>LinguaFlow</span>
+                    </div>
+                    <p>Aprendé idiomas de forma natural y alcanzá tus objetivos profesionales.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Idiomas</h4>
+                    <ul>
+                        <li><a href="#cursos">Inglés</a></li>
+                        <li><a href="#cursos">Español</a></li>
+                        <li><a href="#cursos">Portugués</a></li>
+                        <li><a href="#cursos">Italiano</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#cursos">Cursos</a></li>
+                        <li><a href="#metodologia">Metodología</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📱 +54 9 11 2345-6789</li>
+                        <li>📧 hola@linguaflow.com.ar</li>
+                        <li>📍 Palermo y Belgrano, CABA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LinguaFlow. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

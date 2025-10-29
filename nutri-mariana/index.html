@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lic. Mariana López - Nutricionista profesional. Alimentación saludable y plan nutricional personalizado.">
+    <meta name="keywords" content="nutricionista, nutrición, alimentación saludable, plan nutricional">
+    <title>NutriMariana - Nutricionista Profesional</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🥗</span>
+                    <span>NutriMariana</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#sobre-mi">Sobre Mí</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-nav">Reservar Turno</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="container">
+            <div class="hero-wrapper">
+                <div class="hero-content fade-in">
+                    <span class="hero-badge">Lic. en Nutrición</span>
+                    <h1 class="hero-title">Tu salud es mi prioridad</h1>
+                    <p class="hero-subtitle">Plan nutricional personalizado y acompañamiento profesional para alcanzar tus objetivos de bienestar.</p>
+                    <div class="hero-buttons">
+                        <a href="#contacto" class="btn-primary">Reservar Turno</a>
+                        <a href="#servicios" class="btn-secondary">Ver Servicios</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Consulta inicial gratuita</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Plan personalizado</span>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-icon">✓</span>
+                            <span>Seguimiento online</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image fade-in">
+                    <div class="image-placeholder" id="heroImage" style="background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%); border-radius: 20px;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="sobre-mi">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-image fade-in">
+                    <div class="image-placeholder" id="marianaImage" style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%); border-radius: 20px; height: 100%;"></div>
+                </div>
+                <div class="about-content fade-in">
+                    <h2>Sobre Mí</h2>
+                    <p>Hola, soy Mariana López, Licenciada en Nutrición graduada de la Universidad de Buenos Aires. Con más de 8 años de experiencia en el acompañamiento nutricional, mi misión es ayudarte a alcanzar tus objetivos de salud a través de la alimentación consciente y equilibrada.</p>
+                    <p>Creo firmemente que no existe una dieta única para todos. Por eso, trabajo con planes personalizados adaptados a tus necesidades, estilo de vida y preferencias alimentarias.</p>
+                    <div class="about-stats">
+                        <div class="about-stat">
+                            <span class="stat-number">8+</span>
+                            <span class="stat-label">Años de experiencia</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Pacientes atendidos</span>
+                        </div>
+                        <div class="about-stat">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Satisfacción</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Servicios</h2>
+                <p>Planes nutricionales adaptados a tus necesidades</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">📋</div>
+                    <h3>Consulta Inicial</h3>
+                    <p>Evaluación nutricional completa y plan personalizado</p>
+                    <ul class="service-features">
+                        <li>✓ Análisis de composición corporal</li>
+                        <li>✓ Historia clínica nutricional</li>
+                        <li>✓ Plan alimentario personalizado</li>
+                        <li>✓ Recetas y guía de compras</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-text">Precio orientativo:</span>
+                        <span class="price-amount">$15.000</span>
+                    </div>
+                    <a href="#contacto" class="btn-service">Consultar</a>
+                </div>
+                <div class="service-card featured fade-in">
+                    <div class="badge">Más Popular</div>
+                    <div class="service-icon">💚</div>
+                    <h3>Seguimiento Mensual</h3>
+                    <p>Acompañamiento continuo y ajustes de tu plan</p>
+                    <ul class="service-features">
+                        <li>✓ Consultas mensuales (4 sesiones)</li>
+                        <li>✓ Ajuste de plan</li>
+                        <li>✓ Soporte vía WhatsApp</li>
+                        <li>✓ Recetas nuevas cada mes</li>
+                        <li>✓ Monitoreo de progreso</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-text">Precio orientativo:</span>
+                        <span class="price-amount">$50.000</span>
+                        <span class="price-sublabel">por 4 sesiones</span>
+                    </div>
+                    <a href="#contacto" class="btn-service btn-service-featured">Consultar</a>
+                </div>
+                <div class="service-card fade-in">
+                    <div class="service-icon">🥗</div>
+                    <h3>Plan Vegetariano/Vegano</h3>
+                    <p>Alimentación basada en plantas equilibrada</p>
+                    <ul class="service-features">
+                        <li>✓ Plan vegano completo</li>
+                        <li>✓ Guía de proteínas vegetales</li>
+                        <li>✓ Recetas nutritivas</li>
+                        <li>✓ Aporte de nutrientes óptimo</li>
+                    </ul>
+                    <div class="service-price">
+                        <span class="price-text">Precio orientativo:</span>
+                        <span class="price-amount">$18.000</span>
+                    </div>
+                    <a href="#contacto" class="btn-service">Consultar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Testimonios</h2>
+                <p>Lo que dicen mis pacientes</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Mariana me ayudó a cambiar mi relación con la comida. Bajé 8 kilos en 4 meses de forma saludable y sostenible."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Laura Martínez</h4>
+                            <p>32 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Por fin logré entender cómo alimentarme bien. El plan fue muy fácil de seguir y los resultados son increíbles."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Carlos Rodríguez</h4>
+                            <p>45 años</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Me encanta la atención personalizada y las recetas. Nunca me aburrí de comer sano con sus planes!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">👤</div>
+                        <div class="author-info">
+                            <h4>Ana Fernández</h4>
+                            <p>28 años</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section class="blog" id="blog">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Artículos</h2>
+                <p>Tips y consejos nutricionales</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card fade-in">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #81c784 0%, #66bb6a 100%);">
+                        <span style="font-size: 2rem;">🥑</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">15 Mar 2024</span>
+                        <h3>10 Superalimentos para incluir en tu dieta</h3>
+                        <p>Descubre los alimentos más nutritivos que no deberían faltar en tu alacena.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card fade-in">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);">
+                        <span style="font-size: 2rem;">💧</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">10 Mar 2024</span>
+                        <h3>La importancia de la hidratación</h3>
+                        <p>Todo lo que necesitas saber sobre cuánta agua beber y cuándo beberla.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="blog-card fade-in">
+                    <div class="blog-image" style="background: linear-gradient(135deg, #66bb6a 0%, #4caf50 100%);">
+                        <span style="font-size: 2rem;">🏃</span>
+                    </div>
+                    <div class="blog-content">
+                        <span class="blog-date">5 Mar 2024</span>
+                        <h3>Alimentación pre y post entrenamiento</h3>
+                        <p>Guía completa para optimizar tu rendimiento deportivo con la alimentación correcta.</p>
+                        <a href="#" class="blog-link">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Contacto</h2>
+                <p>Agendá tu turno o consultá tus dudas</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+54 9 11 9876-5432</p>
+                        <a href="https://wa.me/5491198765432?text=Hola%20Mariana%20quiero%20reservar%20un%20turno" class="btn-contact" target="_blank">Escribir</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>hola@nutrimariana.com.ar</p>
+                        <a href="mailto:hola@nutrimariana.com.ar" class="btn-contact">Enviar Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📅</div>
+                        <h3>Calendly</h3>
+                        <p>Agendá tu turno online</p>
+                        <a href="https://calendly.com/nutrimariana" class="btn-contact" target="_blank">Reservar Aquí</a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envianos tu consulta</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491198765432?text=Hola%20Mariana%20quiero%20reservar%20un%20turno" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
+            <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🥗</span>
+                        <span>NutriMariana</span>
+                    </div>
+                    <p>Lic. en Nutrición - Alimentación saludable y personalizada</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#sobre-mi">Sobre Mí</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📱 +54 9 11 9876-5432</li>
+                        <li>📧 hola@nutrimariana.com.ar</li>
+                        <li>📍 Buenos Aires, Argentina</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 NutriMariana. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inmobiliaria - Encontrá tu hogar ideal. Venta y alquiler de propiedades exclusivas.">
+    <meta name="keywords" content="inmobiliaria, venta propiedades, alquiler, casas, departamentos">
+    <title>CasaProp - Inmobiliaria Premium</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🏠</span>
+                    <span>CasaProp</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#propiedades">Propiedades</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-nav">Publicar Propiedad</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-background">
+            <div class="hero-gradient"></div>
+            <div class="hero-pattern"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">🏡 Encontrá tu hogar ideal</span>
+                <h1 class="hero-title">Tu próxima propiedad te espera</h1>
+                <p class="hero-subtitle">Casas, departamentos y terrenos en las mejores ubicaciones</p>
+                
+                <div class="search-box fade-in">
+                    <div class="search-tabs">
+                        <button class="tab active" data-tab="comprar">Comprar</button>
+                        <button class="tab" data-tab="alquilar">Alquilar</button>
+                        <button class="tab" data-tab="invertir">Invertir</button>
+                    </div>
+                    <div class="search-form">
+                        <input type="text" placeholder="📍 Barrio o localidad" class="search-input">
+                        <select class="search-select">
+                            <option>Tipo de propiedad</option>
+                            <option>Casa</option>
+                            <option>Departamento</option>
+                            <option>Local</option>
+                            <option>Terreno</option>
+                        </select>
+                        <button class="btn-search">Buscar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section class="properties" id="propiedades">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Propiedades Destacadas</h2>
+                <p>Selección exclusiva de oportunidades</p>
+            </div>
+            <div class="properties-grid">
+                <div class="property-card featured fade-in">
+                    <div class="property-badge">Destacada</div>
+                    <div class="property-image" style="background: linear-gradient(135deg, #8B4513 0%, #DEB887 100%);">
+                        <span style="font-size: 3rem;">🏡</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Casa en Palermo</h3>
+                        <p class="property-location">📍 Palermo, CABA</p>
+                        <div class="property-details">
+                            <span>3 dormitorios</span>
+                            <span>2 baños</span>
+                            <span>150m²</span>
+                        </div>
+                        <div class="property-price">
+                            <span class="price-label">USD</span>
+                            <span class="price-amount">420.000</span>
+                        </div>
+                        <a href="#contacto" class="btn-property">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="property-card fade-in">
+                    <div class="property-image" style="background: linear-gradient(135deg, #CD853F 0%, #F4A460 100%);">
+                        <span style="font-size: 3rem;">🏢</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Depto en Belgrano</h3>
+                        <p class="property-location">📍 Belgrano, CABA</p>
+                        <div class="property-details">
+                            <span>2 dormitorios</span>
+                            <span>1 baño</span>
+                            <span>75m²</span>
+                        </div>
+                        <div class="property-price">
+                            <span class="price-label">USD</span>
+                            <span class="price-amount">185.000</span>
+                        </div>
+                        <a href="#contacto" class="btn-property">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="property-card fade-in">
+                    <div class="property-image" style="background: linear-gradient(135deg, #A0522D 0%, #CD853F 100%);">
+                        <span style="font-size: 3rem;">🏡</span>
+                    </div>
+                    <div class="property-info">
+                        <h3>Terreno en Zona Norte</h3>
+                        <p class="property-location">📍 San Isidro, BA</p>
+                        <div class="property-details">
+                            <span>600m²</span>
+                            <span>Corner</span>
+                            <span>Fondo propio</span>
+                        </div>
+                        <div class="property-price">
+                            <span class="price-label">USD</span>
+                            <span class="price-amount">95.000</span>
+                        </div>
+                        <a href="#contacto" class="btn-property">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestros Servicios</h2>
+                <p>Todo lo que necesitás para tu operación inmobiliaria</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card-pill fade-in">
+                    <div class="service-icon">💰</div>
+                    <h3>Venta</h3>
+                    <p>Asesoramiento profesional para vender tu propiedad al mejor precio</p>
+                </div>
+                <div class="service-card-pill highlighted fade-in">
+                    <div class="service-icon">📋</div>
+                    <h3>Alquiler</h3>
+                    <p>Gestoría completa y seguimiento mensual de tu propiedad</p>
+                </div>
+                <div class="service-card-pill fade-in">
+                    <div class="service-icon">📊</div>
+                    <h3>Tasación</h3>
+                    <p>Valuación profesional con informe detallado y certificado</p>
+                </div>
+                <div class="service-card-pill fade-in">
+                    <div class="service-icon">📝</div>
+                    <h3>Trámites</h3>
+                    <p>Transferencias, escrituras y gestión documental completa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="nosotros">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <h2>Tu hogar, nuestra misión</h2>
+                    <p>Con más de 15 años en el mercado inmobiliario, ayudamos a familias a encontrar su hogar ideal y a emprendedores a hacer crecer su patrimonio.</p>
+                    <p>Nuestro equipo especializado te acompaña en cada paso del proceso, desde la búsqueda hasta la entrega de llaves.</p>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">Propiedades vendidas</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">98%</span>
+                            <span class="stat-label">Clientes satisfechos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Disponibilidad</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in">
+                    <div class="image-placeholder" id="aboutImage" style="background: linear-gradient(135deg, #8B4513 0%, #DEB887 100%);"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-content fade-in">
+                    <h2>Consultanos sin compromiso</h2>
+                    <p>Estamos para ayudarte a encontrar o vender tu propiedad</p>
+                    <div class="contact-grid">
+                        <div class="contact-item-modern">
+                            <div class="contact-icon">📱</div>
+                            <h3>WhatsApp</h3>
+                            <p>+54 9 11 2345-6789</p>
+                            <a href="https://wa.me/5491123456789?text=Hola%20me%20interesa%20una%20propiedad" class="btn-contact-modern" target="_blank">Escribir</a>
+                        </div>
+                        <div class="contact-item-modern">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>contacto@casaprop.com.ar</p>
+                            <a href="mailto:contacto@casaprop.com.ar" class="btn-contact-modern">Enviar Email</a>
+                        </div>
+                        <div class="contact-item-modern">
+                            <div class="contact-icon">📍</div>
+                            <h3>Oficina</h3>
+                            <p>Av. Santa Fe 4567, CABA</p>
+                            <a href="https://goo.gl/maps/..." class="btn-contact-modern" target="_blank">Ver Mapa</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-modern fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envianos tu consulta</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Interés</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Selecciona</option>
+                                <option value="comprar">Quiero Comprar</option>
+                                <option value="vender">Quiero Vender</option>
+                                <option value="alquilar">Busco Alquilar</option>
+                                <option value="tasacion">Necesito Tasación</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491123456789?text=Hola%20me%20interesa%20una%20propiedad" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
+            <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🏠</span>
+                        <span>CasaProp</span>
+                    </div>
+                    <p>Tu hogar ideal te espera. Inmobiliaria con trayectoria en el mercado.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Buscar</h4>
+                    <ul>
+                        <li><a href="#propiedades">Comprar</a></li>
+                        <li><a href="#propiedades">Alquilar</a></li>
+                        <li><a href="#propiedades">Tasación</a></li>
+                        <li><a href="#servicios">Vender</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#propiedades">Propiedades</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📱 +54 9 11 2345-6789</li>
+                        <li>📧 contacto@casaprop.com.ar</li>
+                        <li>📍 Av. Santa Fe 4567, CABA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CasaProp. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

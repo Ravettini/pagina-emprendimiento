@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concesionaria de autos usados y 0km. Las mejores marcas al mejor precio. Financiación y permutas.">
+    <meta name="keywords" content="concesionaria, autos usados, autos 0km, financiación, permuta">
+    <title>AutoMax - Concesionaria</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🚗</span>
+                    <span>AutoMax</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#usados">Usados</a></li>
+                    <li><a href="#nuevos">0km</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-nav">Cotizar</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">Concesionaria Oficial</span>
+                <h1 class="hero-title">Encontrá tu vehículo perfecto</h1>
+                <p class="hero-subtitle">Autos usados verificados y 0km con las mejores financiaciones del mercado</p>
+                <div class="hero-buttons">
+                    <a href="#usados" class="btn-primary">Ver Usados</a>
+                    <a href="#nuevos" class="btn-secondary">Ver 0km</a>
+                </div>
+                <div class="hero-features">
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Inspección técnica incluida</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Financiación hasta 60 cuotas</span>
+                    </div>
+                    <div class="feature-item">
+                        <span class="feature-icon">✓</span>
+                        <span>Permutas aceptadas</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image fade-in">
+                <div class="image-placeholder" id="heroImage" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 24px;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usados Section -->
+    <section class="vehicles" id="usados">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Vehículos Usados</h2>
+                <p>Selección de autos verificados y con garantía</p>
+            </div>
+            <div class="vehicles-grid">
+                <div class="vehicle-card fade-in">
+                    <div class="vehicle-badge">Más Vendido</div>
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span style="font-size: 3rem;">🚙</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Ford Ranger 2022</h3>
+                        <p>45.000 km | Diesel</p>
+                        <div class="vehicle-price">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-amount">$18.500.000</span>
+                        </div>
+                        <div class="vehicle-features">
+                            <span class="feature-tag">Caja automática</span>
+                            <span class="feature-tag">4x4</span>
+                        </div>
+                        <a href="#contacto" class="btn-vehicle">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="vehicle-card fade-in">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span style="font-size: 3rem;">🚗</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Volkswagen Golf 2021</h3>
+                        <p>30.000 km | Nafta</p>
+                        <div class="vehicle-price">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-amount">$8.900.000</span>
+                        </div>
+                        <div class="vehicle-features">
+                            <span class="feature-tag">Automático</span>
+                            <span class="feature-tag">Full</span>
+                        </div>
+                        <a href="#contacto" class="btn-vehicle">Ver Detalles</a>
+                    </div>
+                </div>
+                <div class="vehicle-card fade-in">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span style="font-size: 3rem;">🚕</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Chevrolet Onix 2023</h3>
+                        <p>15.000 km | Nafta</p>
+                        <div class="vehicle-price">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-amount">$7.200.000</span>
+                        </div>
+                        <div class="vehicle-features">
+                            <span class="feature-tag">Manual</span>
+                            <span class="feature-tag">Full</span>
+                        </div>
+                        <a href="#contacto" class="btn-vehicle">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nuevos Section -->
+    <section class="vehicles new" id="nuevos">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Vehículos 0km</h2>
+                <p>Las últimas unidades disponibles con financiación directa</p>
+            </div>
+            <div class="vehicles-grid">
+                <div class="vehicle-card premium fade-in">
+                    <div class="vehicle-badge premium">Disponible</div>
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span style="font-size: 3rem;">🚙</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Toyota Hilux 2025</h3>
+                        <p>0 km | Diesel</p>
+                        <div class="vehicle-price">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-amount">$25.900.000</span>
+                        </div>
+                        <div class="vehicle-features">
+                            <span class="feature-tag premium">Full</span>
+                            <span class="feature-tag premium">4x4</span>
+                        </div>
+                        <a href="#contacto" class="btn-vehicle btn-premium">Cotizar Ahora</a>
+                    </div>
+                </div>
+                <div class="vehicle-card premium fade-in">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #fa8bff 0%, #2bd2ff 100%);">
+                        <span style="font-size: 3rem;">🚗</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Ford Fiesta 2025</h3>
+                        <p>0 km | Nafta</p>
+                        <div class="vehicle-price">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-amount">$9.800.000</span>
+                        </div>
+                        <div class="vehicle-features">
+                            <span class="feature-tag premium">Full</span>
+                            <span class="feature-tag premium">Automático</span>
+                        </div>
+                        <a href="#contacto" class="btn-vehicle btn-premium">Cotizar Ahora</a>
+                    </div>
+                </div>
+                <div class="vehicle-card premium fade-in">
+                    <div class="vehicle-image" style="background: linear-gradient(135deg, #fad961 0%, #f76b1c 100%);">
+                        <span style="font-size: 3rem;">🚕</span>
+                    </div>
+                    <div class="vehicle-info">
+                        <h3>Peugeot 208 2025</h3>
+                        <p>0 km | Nafta</p>
+                        <div class="vehicle-price">
+                            <span class="price-label">Precio:</span>
+                            <span class="price-amount">$10.500.000</span>
+                        </div>
+                        <div class="vehicle-features">
+                            <span class="feature-tag premium">Full</span>
+                            <span class="feature-tag premium">GT</span>
+                        </div>
+                        <a href="#contacto" class="btn-vehicle btn-premium">Cotizar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestros Servicios</h2>
+                <p>Todo lo que necesitás para tu vehículo</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card-modern fade-in">
+                    <div class="service-icon">💰</div>
+                    <h3>Financiación</h3>
+                    <p>Hasta 60 cuotas con tasas competitivas. Preguntá por planes especiales</p>
+                </div>
+                <div class="service-card-modern featured fade-in">
+                    <div class="service-icon">🔄</div>
+                    <h3>Permuta</h3>
+                    <p>Aceptamos tu vehículo actual como parte de pago. Valoramos tu auto al mejor precio</p>
+                </div>
+                <div class="service-card-modern fade-in">
+                    <div class="service-icon">🔧</div>
+                    <h3>Service Oficial</h3>
+                    <p>Mantenimiento y reparación con repuestos originales y garantía</p>
+                </div>
+                <div class="service-card-modern fade-in">
+                    <div class="service-icon">📋</div>
+                    <h3>Trámites</h3>
+                    <p>Te ayudamos con la transferencia, seguro y patentamiento</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h2>Consultanos</h2>
+                    <p>Estamos para ayudarte a encontrar el vehículo perfecto para vos</p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">📱</div>
+                            <h3>WhatsApp</h3>
+                            <p>+54 9 11 2345-6789</p>
+                            <a href="https://wa.me/5491123456789?text=Hola%20me%20interesa%20un%20vehículo" class="btn-contact" target="_blank">Escribir</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📧</div>
+                            <h3>Email</h3>
+                            <p>ventas@automax.com.ar</p>
+                            <a href="mailto:ventas@automax.com.ar" class="btn-contact">Enviar Email</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">📍</div>
+                            <h3>Showroom</h3>
+                            <p>Av. Libertador 4567, CABA</p>
+                            <a href="https://goo.gl/maps/..." class="btn-contact" target="_blank">Ver Mapa</a>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-icon">🕒</div>
+                            <h3>Horarios</h3>
+                            <p>Lun - Sáb: 9:00 a 20:00<br>Dom: 10:00 a 14:00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Envianos tu consulta</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="interest">Interés</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Selecciona</option>
+                                <option value="usado">Vehículo Usado</option>
+                                <option value="nuevo">Vehículo 0km</option>
+                                <option value="permuta">Permuta</option>
+                                <option value="financiacion">Financiación</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Consulta</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491123456789?text=Hola%20me%20interesa%20un%20vehículo" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
+            <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🚗</span>
+                        <span>AutoMax</span>
+                    </div>
+                    <p>Tu próximo vehículo te espera. Concesionaria con más de 10 años en el mercado.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Comprar</h4>
+                    <ul>
+                        <li><a href="#usados">Vehículos Usados</a></li>
+                        <li><a href="#nuevos">Vehículos 0km</a></li>
+                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#contacto">Financiación</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#usados">Usados</a></li>
+                        <li><a href="#nuevos">0km</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📱 +54 9 11 2345-6789</li>
+                        <li>📧 ventas@automax.com.ar</li>
+                        <li>📍 Av. Libertador 4567, CABA</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AutoMax. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

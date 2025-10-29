@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Guardianes del Delta - Protegemos y conservamos los ecosistemas del Delta del Paraná.">
+    <meta name="keywords" content="ONG, conservación, medio ambiente, Delta del Paraná, ecología">
+    <title>Guardianes del Delta - Conservación y Ecología</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🌿</span>
+                    <span>Guardianes del Delta</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#mision">Misión</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#donar">Donar</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Protegiendo el Delta del Paraná</h1>
+                <p class="hero-subtitle fade-in">Conservamos y restauramos los ecosistemas naturales para las futuras generaciones.</p>
+                <div class="hero-buttons fade-in">
+                    <a href="#donar" class="btn-primary">Donar Ahora</a>
+                    <a href="#proyectos" class="btn-secondary">Ver Proyectos</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission" id="mision">
+        <div class="container">
+            <div class="mission-wrapper">
+                <div class="mission-content fade-in">
+                    <h2>Nuestra Misión</h2>
+                    <p>Somos una organización sin fines de lucro dedicada a la conservación y protección del Delta del Paraná y sus ecosistemas asociados.</p>
+                    <p>Trabajamos para:</p>
+                    <ul class="mission-list">
+                        <li>🌱 Restaurar áreas degradadas del Delta</li>
+                        <li>🐾 Proteger la fauna nativa</li>
+                        <li>🌊 Conservar la calidad del agua</li>
+                        <li>👥 Educar sobre la importancia del ecosistema</li>
+                        <li>🤝 Colaborar con comunidades locales</li>
+                    </ul>
+                    <a href="#contacto" class="btn-mission">Conocé Más</a>
+                </div>
+                <div class="mission-image fade-in">
+                    <div class="image-placeholder" id="deltaImage" style="background: linear-gradient(135deg, #66bb6a 0%, #2e7d32 100%); border-radius: 20px; height: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="proyectos">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestros Proyectos</h2>
+                <p>Trabajos en curso para proteger el Delta</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card fade-in">
+                    <div class="project-image" style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);">
+                        <span style="font-size: 3rem;">🌳</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">En curso</span>
+                        <h3>Reforestación del Humedal</h3>
+                        <p>Plantamos más de 5.000 árboles nativos para restaurar el humedal degradado.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">5.247</span>
+                                <span class="stat-label">Árboles plantados</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">45ha</span>
+                                <span class="stat-label">Terreno restaurado</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image" style="background: linear-gradient(135deg, #00bcd4 0%, #00838f 100%);">
+                        <span style="font-size: 3rem;">🐦</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">En curso</span>
+                        <h3>Conservación de Aves</h3>
+                        <p>Monitoreo y protección de especies en peligro de extinción del Delta.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">120</span>
+                                <span class="stat-label">Especies monitoreadas</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">8</span>
+                                <span class="stat-label">En peligro</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card fade-in">
+                    <div class="project-image" style="background: linear-gradient(135deg, #81c784 0%, #4caf50 100%);">
+                        <span style="font-size: 3rem;">📚</span>
+                    </div>
+                    <div class="project-content">
+                        <span class="project-badge">En curso</span>
+                        <h3>Educación Ambiental</h3>
+                        <p>Talleres y charlas en escuelas de la región sobre conservación del Delta.</p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <span class="stat-number">2.500</span>
+                                <span class="stat-label">Estudiantes alcanzados</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">25</span>
+                                <span class="stat-label">Escuelas visitadas</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Donation Section -->
+    <section class="donation" id="donar">
+        <div class="container">
+            <div class="donation-wrapper">
+                <div class="donation-content fade-in">
+                    <h2>Tu Donación Importa</h2>
+                    <p>Cada contribución nos ayuda a continuar con nuestros proyectos de conservación y protección del Delta del Paraná.</p>
+                    <div class="donation-options">
+                        <div class="donation-amount">
+                            <button class="amount-btn" data-amount="1000">$1.000</button>
+                            <button class="amount-btn" data-amount="2500">$2.500</button>
+                            <button class="amount-btn" data-amount="5000">$5.000</button>
+                            <button class="amount-btn" data-amount="10000">$10.000</button>
+                        </div>
+                        <div class="donation-input">
+                            <input type="number" id="customAmount" placeholder="Otro monto">
+                        </div>
+                        <button class="btn-donate" onclick="donate()">Donar Ahora</button>
+                        <p class="donation-note">💝 Los donantes reciben un certificado digital y actualizaciones del proyecto.</p>
+                    </div>
+                </div>
+                <div class="donation-image fade-in">
+                    <div class="image-placeholder" id="donationImage" style="background: linear-gradient(135deg, #64b5f6 0%, #1976d2 100%); border-radius: 20px; height: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="noticias">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Últimas Noticias</h2>
+                <p>Actualizaciones de nuestros proyectos</p>
+            </div>
+            <div class="news-grid">
+                <article class="news-card fade-in">
+                    <div class="news-image" style="background: linear-gradient(135deg, #66bb6a 0%, #2e7d32 100%);">
+                        <span style="font-size: 2rem;">🌿</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">20 Mar 2024</span>
+                        <h3>Nueva Temporada de Plantación</h3>
+                        <p>Iniciamos una nueva campaña de reforestación con 2.000 nuevos árboles nativos.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="news-card fade-in">
+                    <div class="news-image" style="background: linear-gradient(135deg, #4caf50 0%, #388e3c 100%);">
+                        <span style="font-size: 2rem;">🦆</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">15 Mar 2024</span>
+                        <h3>Descubrimiento de Nueva Especie</h3>
+                        <p>Identificamos una nueva especie de ave en el humedal del Delta durante nuestro censo anual.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </article>
+                <article class="news-card fade-in">
+                    <div class="news-image" style="background: linear-gradient(135deg, #81c784 0%, #4caf50 100%);">
+                        <span style="font-size: 2rem;">📢</span>
+                    </div>
+                    <div class="news-content">
+                        <span class="news-date">10 Mar 2024</span>
+                        <h3>Taller de Reciclaje</h3>
+                        <p>Realizamos un taller gratuito en la comunidad sobre manejo de residuos y reciclaje.</p>
+                        <a href="#" class="news-link">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Contacto</h2>
+                <p>Escribinos o sumate como voluntario</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>info@guardianesdeldelta.org</p>
+                        <a href="mailto:info@guardianesdeldelta.org" class="btn-contact">Enviar Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+54 9 11 8765-4321</p>
+                        <a href="https://wa.me/5491187654321?text=Hola%20quiero%20sumarme" class="btn-contact" target="_blank">Escribir</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">🤝</div>
+                        <h3>Voluntariado</h3>
+                        <p>Sumate a nuestra causa</p>
+                        <a href="#contacto" class="btn-contact">Ser Voluntario</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491187654321?text=Hola%20quiero%20sumarme" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
+            <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🌿</span>
+                        <span>Guardianes del Delta</span>
+                    </div>
+                    <p>Protegiendo y conservando el Delta del Paraná para las futuras generaciones.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Organización</h4>
+                    <ul>
+                        <li><a href="#mision">Misión</a></li>
+                        <li><a href="#proyectos">Proyectos</a></li>
+                        <li><a href="#donar">Donar</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📧 info@guardianesdeldelta.org</li>
+                        <li>📱 +54 9 11 8765-4321</li>
+                        <li>📍 Delta del Paraná, Tigre</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Guardianes del Delta. Todos los derechos reservados.</p>
+                <p>Organización sin fines de lucro</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

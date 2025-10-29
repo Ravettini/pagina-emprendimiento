@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luz Interior Yoga - Conectá con tu cuerpo y mente. Clases de yoga, meditación y bienestar en Buenos Aires.">
+    <meta name="keywords" content="yoga, meditación, bienestar, clases de yoga, Buenos Aires">
+    <title>Luz Interior Yoga - Estudio de Yoga y Bienestar</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🧘</span>
+                    <span>Luz Interior</span>
+                </div>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#clases">Clases</a></li>
+                    <li><a href="#horarios">Horarios</a></li>
+                    <li><a href="#instructores">Instructores</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#contacto" class="btn-nav">Reservar Clase</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="inicio">
+        <div class="hero-image" id="heroImage"></div>
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title fade-in">Conectá con tu cuerpo</h1>
+                <p class="hero-subtitle fade-in">Respirar también es avanzar</p>
+                <p class="hero-text fade-in">Espacio de yoga y bienestar donde encontrás tu equilibrio físico y mental.</p>
+                <div class="hero-buttons fade-in">
+                    <a href="#clases" class="btn-primary">Ver Clases</a>
+                    <a href="https://calendly.com/luzinterior" class="btn-secondary" target="_blank">Reservar tu Lugar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section class="classes" id="clases">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Tipos de Clases</h2>
+                <p>Encontrá la práctica que necesitás</p>
+            </div>
+            <div class="classes-grid">
+                <div class="class-card fade-in">
+                    <div class="class-image" id="classImage1"></div>
+                    <div class="class-content">
+                        <h3>Hatha Yoga</h3>
+                        <p>Posturas clásicas que equilibran cuerpo y mente. Ideal para principiantes.</p>
+                        <ul class="class-features">
+                            <li>✓ 60 minutos</li>
+                            <li>✓ Todos los niveles</li>
+                            <li>✓ Enfoque en alineación</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class-card fade-in">
+                    <div class="class-image" id="classImage2"></div>
+                    <div class="class-content">
+                        <h3>Vinyasa Flow</h3>
+                        <p>Movimiento fluido y dinámico sincronizado con la respiración.</p>
+                        <ul class="class-features">
+                            <li>✓ 75 minutos</li>
+                            <li>✓ Nivel intermedio</li>
+                            <li>✓ Fortalece y flexibiliza</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class-card fade-in">
+                    <div class="class-image" id="classImage3"></div>
+                    <div class="class-content">
+                        <h3>Yin Yoga</h3>
+                        <p>Práctica suave y meditativa que libera tensiones profundas.</p>
+                        <ul class="class-features">
+                            <li>✓ 90 minutos</li>
+                            <li>✓ Todos los niveles</li>
+                            <li>✓ Profunda relajación</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="class-card fade-in">
+                    <div class="class-image" id="classImage4"></div>
+                    <div class="class-content">
+                        <h3>Meditación</h3>
+                        <p>Sesiones guiadas para calmar la mente y conectar con el presente.</p>
+                        <ul class="class-features">
+                            <li>✓ 45 minutos</li>
+                            <li>✓ Todo el mundo puede</li>
+                            <li>✓ Mindfulness</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section class="schedule" id="horarios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Horarios</h2>
+                <p>Clases de lunes a sábados</p>
+            </div>
+            <div class="schedule-grid">
+                <div class="schedule-card fade-in">
+                    <div class="day">Lunes</div>
+                    <div class="classes">
+                        <div class="time-class">
+                            <span class="time">08:00</span>
+                            <span class="class-name">Hatha Yoga</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">18:00</span>
+                            <span class="class-name">Vinyasa Flow</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">20:00</span>
+                            <span class="class-name">Yin Yoga</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card fade-in">
+                    <div class="day">Martes</div>
+                    <div class="classes">
+                        <div class="time-class">
+                            <span class="time">08:00</span>
+                            <span class="class-name">Hatha Yoga</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">19:00</span>
+                            <span class="class-name">Meditación</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card fade-in">
+                    <div class="day">Miércoles</div>
+                    <div class="classes">
+                        <div class="time-class">
+                            <span class="time">08:00</span>
+                            <span class="class-name">Hatha Yoga</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">18:00</span>
+                            <span class="class-name">Vinyasa Flow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card fade-in">
+                    <div class="day">Jueves</div>
+                    <div class="classes">
+                        <div class="time-class">
+                            <span class="time">08:00</span>
+                            <span class="class-name">Hatha Yoga</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">19:00</span>
+                            <span class="class-name">Yin Yoga</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card fade-in">
+                    <div class="day">Viernes</div>
+                    <div class="classes">
+                        <div class="time-class">
+                            <span class="time">08:00</span>
+                            <span class="class-name">Hatha Yoga</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">18:00</span>
+                            <span class="class-name">Vinyasa Flow</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="schedule-card fade-in">
+                    <div class="day">Sábado</div>
+                    <div class="classes">
+                        <div class="time-class">
+                            <span class="time">10:00</span>
+                            <span class="class-name">Hatha Yoga</span>
+                        </div>
+                        <div class="time-class">
+                            <span class="time">17:00</span>
+                            <span class="class-name">Meditación</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="schedule-note fade-in">
+                <p>💡 Consultá por clases especiales y workshops mensuales</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructors Section -->
+    <section class="instructors" id="instructores">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestros Instructores</h2>
+                <p>Guías certificados en yoga y meditación</p>
+            </div>
+            <div class="instructors-grid">
+                <div class="instructor-card fade-in">
+                    <div class="instructor-image" id="instructorImage1"></div>
+                    <div class="instructor-content">
+                        <h3>María Luz</h3>
+                        <p class="instructor-title">Fundadora & Instructora Certificada</p>
+                        <p>15 años de experiencia. Formada en Hatha y Vinyasa Yoga. Certificada por Yoga Alliance.</p>
+                        <div class="instructor-badges">
+                            <span class="badge">E-RYT 500</span>
+                            <span class="badge">Mindfulness</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card fade-in">
+                    <div class="instructor-image" id="instructorImage2"></div>
+                    <div class="instructor-content">
+                        <h3>Santiago Vera</h3>
+                        <p class="instructor-title">Vinyasa & Yin Yoga</p>
+                        <p>Especialista en dinámicas de movimiento y filosofía del yoga. 8 años de práctica.</p>
+                        <div class="instructor-badges">
+                            <span class="badge">Vinyasa</span>
+                            <span class="badge">Yin</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="instructor-card fade-in">
+                    <div class="instructor-image" id="instructorImage3"></div>
+                    <div class="instructor-content">
+                        <h3>Ana Flores</h3>
+                        <p class="instructor-title">Meditación & Mindfulness</p>
+                        <p>Guía de meditación y mindfulness. Certificada en MBSR (Reducción de Estrés).</p>
+                        <div class="instructor-badges">
+                            <span class="badge">MBSR</span>
+                            <span class="badge">Bienestar</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contacto">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Contacto</h2>
+                <p>Reservá tu clase o consultá tus dudas</p>
+            </div>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <div class="contact-card">
+                        <div class="contact-icon">📱</div>
+                        <h3>WhatsApp</h3>
+                        <p>+54 9 11 9988-7766</p>
+                        <a href="https://wa.me/5491199887766?text=Hola%20quiero%20reservar%20una%20clase" class="btn-contact" target="_blank">Escribir</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>info@luzinterioryoga.com</p>
+                        <a href="mailto:info@luzinterioryoga.com" class="btn-contact">Enviar Email</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Ubicación</h3>
+                        <p>Av. del Libertador 3450, Palermo</p>
+                        <a href="#" class="btn-contact">Ver Mapa</a>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📅</div>
+                        <h3>Reservas</h3>
+                        <p>Agendá tu clase online</p>
+                        <a href="https://calendly.com/luzinterior" class="btn-contact" target="_blank">Reservar Ahora</a>
+                    </div>
+                </div>
+                <div class="contact-map fade-in">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0852733400924!2d-58.3733433!3d-34.6037226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a3352f70e4c3b1%3A0x95e8e7690c85f8c1!2sAv.%20del%20Libertador%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1234567890123!5m2!1ses-419!2sar" 
+                        width="100%" 
+                        height="400" 
+                        style="border:0; border-radius: 15px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/5491199887766?text=Hola%20quiero%20reservar%20una%20clase" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
+            <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
+        </svg>
+    </a>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <span class="logo-icon">🧘</span>
+                        <span>Luz Interior Yoga</span>
+                    </div>
+                    <p>Conectá con tu cuerpo y mente en nuestro espacio de yoga y bienestar.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#clases">Clases</a></li>
+                        <li><a href="#horarios">Horarios</a></li>
+                        <li><a href="#instructores">Instructores</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <ul>
+                        <li>📱 +54 9 11 9988-7766</li>
+                        <li>📧 info@luzinterioryoga.com</li>
+                        <li>📍 Av. del Libertador 3450</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Luz Interior Yoga. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
