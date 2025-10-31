@@ -37,7 +37,16 @@ function loadPexelsImage(query, elementSelector, fallbackGradient) {
 // Load Images on Page Load
 document.addEventListener('DOMContentLoaded', () => {
     loadPexelsImage('code programming javascript development', '#heroCodeBg', 'transparent');
-    loadPexelsImage('professional team working', '#teamPhoto', 'linear-gradient(135deg, #263238 0%, #1a1e23 100%)');
+    
+    // Usar el logo oficial en lugar de imagen de Pexels
+    const teamPhoto = document.getElementById('teamPhoto');
+    if (teamPhoto) {
+        teamPhoto.style.backgroundImage = 'url(logo-removebg-preview.png)';
+        teamPhoto.style.backgroundSize = 'contain';
+        teamPhoto.style.backgroundPosition = 'center';
+        teamPhoto.style.backgroundRepeat = 'no-repeat';
+        teamPhoto.style.backgroundColor = 'transparent';
+    }
 });
 
 // Mobile Menu Toggle
@@ -123,9 +132,13 @@ if (contactForm) {
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
     if (window.scrollY > 50) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        navbar.classList.add('scrolled');
+        navbar.style.background = 'rgba(2, 64, 83, 0.85)';
+        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
+        navbar.classList.remove('scrolled');
+        navbar.style.background = 'rgba(2, 64, 83, 0.95)';
+        navbar.style.boxShadow = 'none';
     }
 });
 
