@@ -142,3 +142,76 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// Portfolio Filter Functionality
+const filterButtons = document.querySelectorAll('.filter-btn');
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+if (filterButtons.length > 0) {
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            // Remove active class from all buttons
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+            // Add active class to clicked button
+            button.classList.add('active');
+            
+            const filterValue = button.getAttribute('data-filter');
+            
+            portfolioItems.forEach(item => {
+                const itemPlan = item.getAttribute('data-plan');
+                
+                if (filterValue === 'todos') {
+                    // Show all items
+                    item.classList.remove('hidden');
+                    item.style.display = '';
+                } else if (itemPlan === filterValue) {
+                    // Show matching items
+                    item.classList.remove('hidden');
+                    item.style.display = '';
+                } else {
+                    // Hide non-matching items
+                    item.classList.add('hidden');
+                    item.style.display = 'none';
+                }
+            });
+        });
+    });
+}
+
+// Maintenance Modal Functionality
+const modal = document.getElementById('maintenanceModal');
+const modalOverlay = document.getElementById('modalOverlay');
+const modalClose = document.getElementById('modalClose');
+const maintenanceButtons = document.querySelectorAll('.btn-maintenance-info');
+
+// Open modal
+if (maintenanceButtons.length > 0) {
+    maintenanceButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+    });
+}
+
+// Close modal
+function closeModal() {
+    modal.classList.remove('active');
+    document.body.style.overflow = '';
+}
+
+if (modalClose) {
+    modalClose.addEventListener('click', closeModal);
+}
+
+if (modalOverlay) {
+    modalOverlay.addEventListener('click', closeModal);
+}
+
+// Close modal with ESC key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+    }
+});
+

@@ -68,6 +68,35 @@
         </div>
     </section>
 
+    <!-- What We Do Section -->
+    <section class="what-we-do" id="que-hacemos">
+        <div class="container">
+            <div class="what-we-do-wrapper">
+                <div class="what-we-do-content fade-in">
+                    <h2>¿Qué Hacemos?</h2>
+                    <p class="lead">Somos especialistas en crear y mantener páginas web para emprendedores argentinos que quieren destacarse en internet.</p>
+                    <div class="what-we-do-items">
+                        <div class="what-we-do-item">
+                            <div class="item-icon">🎨</div>
+                            <h3>Diseño y Desarrollo</h3>
+                            <p>Creamos tu sitio web desde cero, con un diseño moderno, profesional y adaptado a tu marca. Cada página está optimizada para convertir visitas en clientes.</p>
+                        </div>
+                        <div class="what-we-do-item">
+                            <div class="item-icon">🔧</div>
+                            <h3>Mantenimiento Continuo</h3>
+                            <p>No solo creamos tu web, la mantenemos actualizada, segura y funcionando 24/7. Incluye hosting, dominio, actualizaciones de seguridad y soporte técnico.</p>
+                        </div>
+                        <div class="what-we-do-item">
+                            <div class="item-icon">📈</div>
+                            <h3>Crecimiento Digital</h3>
+                            <p>Te acompañamos en cada paso. Desde el lanzamiento hasta la optimización SEO, para que tu negocio crezca y llegue a más clientes cada día.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services" id="servicios">
         <div class="container">
@@ -88,6 +117,7 @@
                         <span class="maintenance-label">+ Mantenimiento:</span>
                         <span class="maintenance-amount">$30.000/mes</span>
                     </div>
+                    <button class="btn-maintenance-info" id="maintenanceInfoBtn">¿Por qué se paga mantenimiento?</button>
                     <ul class="service-features">
                         <li>✓ Hasta 5 secciones (Inicio, Servicios, Nosotros, etc.)</li>
                         <li>✓ Diseño responsive</li>
@@ -111,6 +141,7 @@
                         <span class="maintenance-label">+ Mantenimiento:</span>
                         <span class="maintenance-amount">$50.000/mes</span>
                     </div>
+                    <button class="btn-maintenance-info" id="maintenanceInfoBtn">¿Por qué se paga mantenimiento?</button>
                     <ul class="service-features">
                         <li>✓ Hasta 10 secciones completas</li>
                         <li>✓ Diseño responsive</li>
@@ -134,6 +165,7 @@
                         <span class="maintenance-label">+ Mantenimiento:</span>
                         <span class="maintenance-amount">$80.000/mes</span>
                     </div>
+                    <button class="btn-maintenance-info" id="maintenanceInfoBtn">¿Por qué se paga mantenimiento?</button>
                     <ul class="service-features">
                         <li>✓ Secciones ilimitadas</li>
                         <li>✓ Panel administrativo</li>
@@ -157,8 +189,14 @@
                 <h2>Portfolio</h2>
                 <p>Descubre algunos de nuestros proyectos</p>
             </div>
+            <div class="portfolio-filters fade-in">
+                <button class="filter-btn active" data-filter="todos">Todos</button>
+                <button class="filter-btn" data-filter="basico">Básico</button>
+                <button class="filter-btn" data-filter="profesional">Profesional</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+            </div>
             <div class="portfolio-grid">
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="basico">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #9575cd 0%, #7e57c2 100%);">
                         <span style="font-size: 2rem;">🧘</span>
                     </div>
@@ -169,7 +207,7 @@
                         <a href="luz-interior-yoga/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="profesional">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #ffa726 0%, #ff9800 100%);">
                         <span style="font-size: 2rem;">🍞</span>
                     </div>
@@ -180,7 +218,7 @@
                         <a href="pan-de-barrio/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="profesional">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #66bb6a 0%, #43a047 100%);">
                         <span style="font-size: 2rem;">🥗</span>
                     </div>
@@ -191,7 +229,7 @@
                         <a href="nutri-mariana/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="premium">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #ab47bc 0%, #8e24aa 100%);">
                         <span style="font-size: 2rem;">🏃</span>
                     </div>
@@ -202,7 +240,7 @@
                         <a href="urban-fit/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="profesional">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #42a5f5 0%, #1e88e5 100%);">
                         <span style="font-size: 2rem;">🔧</span>
                     </div>
@@ -213,7 +251,7 @@
                         <a href="manitas-express/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="profesional">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #66bb6a 0%, #2e7d32 100%);">
                         <span style="font-size: 2rem;">🌿</span>
                     </div>
@@ -224,7 +262,7 @@
                         <a href="guardianes-del-delta/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="profesional">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);">
                         <span style="font-size: 2rem;">⚖️</span>
                     </div>
@@ -235,7 +273,7 @@
                         <a href="estudio-juridico/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="premium">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                         <span style="font-size: 2rem;">🚗</span>
                     </div>
@@ -246,7 +284,7 @@
                         <a href="concesionaria/index.html" target="_blank" class="btn-portfolio">Ver Demo</a>
                     </div>
                 </div>
-                <div class="portfolio-item fade-in">
+                <div class="portfolio-item fade-in" data-plan="profesional">
                     <div class="portfolio-image" style="background: linear-gradient(135deg, #2d8659 0%, #7fb069 100%);">
                         <span style="font-size: 2rem;">📚</span>
                     </div>
@@ -402,6 +440,65 @@
             <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
         </svg>
     </a>
+
+    <!-- Maintenance Modal -->
+    <div class="modal" id="maintenanceModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <h2>¿Por qué se paga mantenimiento?</h2>
+            <div class="modal-body">
+                <p class="modal-intro">El mantenimiento mensual es esencial para mantener tu página web funcionando de manera óptima y segura. Incluye varios servicios fundamentales:</p>
+                
+                <div class="maintenance-items">
+                    <div class="maintenance-item">
+                        <div class="maintenance-icon">🌐</div>
+                        <div class="maintenance-text">
+                            <h3>Hosting Profesional</h3>
+                            <p>Tu sitio web necesita estar alojado en servidores de alta calidad que garanticen velocidad, seguridad y disponibilidad 24/7. Sin hosting, tu web simplemente no existe en internet.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="maintenance-item">
+                        <div class="maintenance-icon">🔐</div>
+                        <div class="maintenance-text">
+                            <h3>Dominio y SSL</h3>
+                            <p>El dominio es tu dirección en internet (tuempresa.com). Renovamos tu dominio anualmente y mantenemos el certificado SSL activo para que tu sitio sea seguro (https).</p>
+                        </div>
+                    </div>
+                    
+                    <div class="maintenance-item">
+                        <div class="maintenance-icon">🔧</div>
+                        <div class="maintenance-text">
+                            <h3>Actualizaciones y Seguridad</h3>
+                            <p>Realizamos actualizaciones periódicas de seguridad, copias de seguridad diarias y monitoreamos tu sitio para prevenir hackeos y caídas.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="maintenance-item">
+                        <div class="maintenance-icon">📞</div>
+                        <div class="maintenance-text">
+                            <h3>Soporte Técnico</h3>
+                            <p>Estamos disponibles para resolver cualquier problema, realizar cambios de contenido, agregar funcionalidades y optimizar el rendimiento de tu sitio.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="maintenance-item">
+                        <div class="maintenance-icon">📊</div>
+                        <div class="maintenance-text">
+                            <h3>Monitoreo y Optimización</h3>
+                            <p>Monitoreamos constantemente el rendimiento, velocidad de carga y funcionamiento correcto de todas las funcionalidades de tu web.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="modal-footer">
+                    <p><strong>¿Tenés dudas?</strong> Hablemos por WhatsApp y te explicamos todo en detalle.</p>
+                    <a href="https://wa.me/5491161839587?text=Hola!%20Tengo%20dudas%20sobre%20el%20mantenimiento" class="btn-primary" target="_blank">💬 Consultar por WhatsApp</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
