@@ -47,6 +47,16 @@ document.addEventListener('DOMContentLoaded', () => {
         teamPhoto.style.backgroundRepeat = 'no-repeat';
         teamPhoto.style.backgroundColor = 'transparent';
     }
+    
+    // Cargar logo de Branquicio Sport en testimonios
+    const branquicioLogo = document.getElementById('branquicioLogo');
+    if (branquicioLogo) {
+        branquicioLogo.style.backgroundImage = 'url(branquicio-sport/logo sin fondo.png)';
+        branquicioLogo.style.backgroundSize = 'contain';
+        branquicioLogo.style.backgroundPosition = 'center';
+        branquicioLogo.style.backgroundRepeat = 'no-repeat';
+        branquicioLogo.style.backgroundColor = '#C9242A';
+    }
 });
 
 // Mobile Menu Toggle

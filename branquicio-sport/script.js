@@ -176,7 +176,7 @@ function initContactForm() {
             const message = formData.get('message');
             
             const whatsappMessage = `Hola Branquicio Sport! 🏁\n\nSoy ${name}\nEmail: ${email}\n\nMensaje:\n${message}`;
-            const whatsappUrl = `https://wa.me/5491159959993?text=${encodeURIComponent(whatsappMessage)}`;
+            const whatsappUrl = `https://wa.me/54911599599931159959993?text=${encodeURIComponent(whatsappMessage)}`;
             
             window.open(whatsappUrl, '_blank');
             alert('¡Gracias por tu consulta! Redirigiendo a WhatsApp...');

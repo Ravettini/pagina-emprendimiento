@@ -730,6 +730,9 @@ section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
+    justify-content: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
 .testimonial-card {
@@ -760,15 +763,19 @@ section {
 }
 
 .author-avatar {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     background: var(--color-bg-light);
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
-    border: 1px solid var(--color-border-light);
+    border: 2px solid var(--color-green-medium);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
 }
 
 .author-info h4 {
@@ -1122,6 +1129,11 @@ section {
     animation: bounce 2s infinite;
 }
 
+.whatsapp-float svg {
+    width: 40px;
+    height: 40px;
+}
+
 .whatsapp-float:hover {
     transform: scale(1.1);
 }
@@ -1133,6 +1145,180 @@ section {
 
 .whatsapp-float svg {
     filter: brightness(0) invert(1);
+}
+
+/* ===== LEGAL PAGE ===== */
+.legal-content {
+    padding: 8rem 0 4rem;
+    background: var(--color-bg-white);
+    min-height: 100vh;
+}
+
+.legal-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.legal-header h1 {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    color: var(--color-green-dark);
+    margin-bottom: 1rem;
+}
+
+.legal-intro {
+    font-size: 1.2rem;
+    color: var(--color-navy);
+    opacity: 0.8;
+}
+
+.legal-section {
+    background: var(--color-bg-card);
+    border: 2px solid var(--color-green-light);
+    border-radius: 15px;
+    padding: 3rem;
+    margin-bottom: 3rem;
+    position: relative;
+}
+
+.legal-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.legal-section h2 {
+    font-size: 2rem;
+    color: var(--color-green-dark);
+    margin-bottom: 2rem;
+}
+
+.legal-text h3 {
+    font-size: 1.3rem;
+    color: var(--color-navy);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.legal-text p {
+    color: var(--color-navy);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+
+.legal-text ul {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 0;
+}
+
+.legal-text ul li {
+    padding: 0.75rem 0 0.75rem 2rem;
+    color: var(--color-navy);
+    opacity: 0.85;
+    line-height: 1.6;
+    position: relative;
+}
+
+.legal-text ul li::before {
+    content: "•";
+    color: var(--color-green-medium);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0.5rem;
+    top: 0.5rem;
+}
+
+.legal-text a {
+    color: var(--color-green-blue);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.legal-text a:hover {
+    color: var(--color-green-medium);
+    text-decoration: underline;
+}
+
+.fiscal-data {
+    background: var(--color-bg-white);
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.fiscal-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.fiscal-item {
+    padding: 1rem;
+    border-left: 3px solid var(--color-green-medium);
+}
+
+.fiscal-item strong {
+    display: block;
+    color: var(--color-green-dark);
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.fiscal-item p {
+    color: var(--color-navy);
+    font-size: 1.1rem;
+    margin: 0;
+    opacity: 1;
+}
+
+.legal-contact {
+    text-align: center;
+    background: var(--color-bg-light-alt);
+    padding: 3rem;
+    border-radius: 15px;
+    margin: 3rem 0;
+}
+
+.legal-contact h3 {
+    font-size: 1.8rem;
+    color: var(--color-green-dark);
+    margin-bottom: 1rem;
+}
+
+.legal-contact p {
+    color: var(--color-navy);
+    margin-bottom: 2rem;
+}
+
+.legal-contact .btn-primary {
+    display: inline-block;
+}
+
+.legal-footer {
+    text-align: center;
+    padding: 3rem 0;
+    border-top: 2px solid var(--color-green-light);
+}
+
+.legal-footer small {
+    color: var(--color-navy);
+    opacity: 0.7;
+}
+
+.link-back {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-green-blue);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.link-back:hover {
+    color: var(--color-green-medium);
+    transform: translateX(-5px);
 }
 
 /* ===== FOOTER ===== */
@@ -1207,6 +1393,18 @@ section {
     padding-top: 2rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-legal-link {
+    color: var(--color-green-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.footer-legal-link:hover {
+    color: var(--color-green-medium);
+    text-decoration: underline;
 }
 
 /* ===== ANIMATIONS ===== */

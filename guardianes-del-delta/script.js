@@ -47,7 +47,7 @@ function donate() {
     const customAmount = document.getElementById('customAmount').value;
     const amount = selectedAmount || customAmount || '1000';
     const message = `Hola! Quiero realizar una donación de $${parseInt(amount).toLocaleString()} para Guardianes del Delta.`;
-    const whatsappUrl = `https://wa.me/5491187654321?text=${encodeURIComponent(message)}`;
+    const whatsappUrl = `https://wa.me/5491100000000?text=${encodeURIComponent(message)}`;
     
     window.open(whatsappUrl, '_blank');
 }

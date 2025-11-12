@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="UrbanFit - Indumentaria deportiva urbana. Moda, estilo y funcionalidad para tu vida activa.">
-    <meta name="keywords" content="ropa deportiva, indumentaria fitness, ropa urbana, ropa para gimnasio">
-    <title>UrbanFit - Indumentaria Deportiva Urbana</title>
+    <meta name="description" content="UrbanFit - El gimnasio que transforma tu vida. Entrenamiento funcional, musculación, clases grupales y nutrición deportiva.">
+    <meta name="keywords" content="gimnasio, fitness, entrenamiento funcional, musculación, clases grupales, crossfit, nutrición deportiva">
+    <title>UrbanFit - Gimnasio de Alto Rendimiento</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
 </head>
 <body>
@@ -18,8 +18,8 @@
         <div class="container">
             <div class="nav-wrapper">
                 <div class="logo">
-                    <span class="logo-icon">🏃</span>
-                    <span>UrbanFit</span>
+                    <span class="logo-icon">💪</span>
+                    <span>URBANFIT</span>
                 </div>
                 <button class="menu-toggle" id="menuToggle">
                     <span></span>
@@ -28,13 +28,13 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#inicio">Inicio</a></li>
-                    <li><a href="#productos">Productos</a></li>
-                    <li><a href="#promos">Promociones</a></li>
-                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#nosotros">Quiénes Somos</a></li>
+                    <li><a href="#clases">Clases</a></li>
+                    <li><a href="#instalaciones">Instalaciones</a></li>
+                    <li><a href="#planes">Planes</a></li>
+                    <li><a href="#testimonios">Testimonios</a></li>
                     <li><a href="#contacto">Contacto</a></li>
-                    <li><a href="#carrito" class="cart-btn" id="cartBtn">
-                        🛒 Carrito <span class="cart-count">0</span>
-                    </a></li>
+                    <li><a href="#contacto" class="btn-nav">Reservá tu clase</a></li>
                 </ul>
             </div>
         </div>
@@ -42,196 +42,290 @@
 
     <!-- Hero Section -->
     <section class="hero" id="inicio">
-        <div class="hero-overlay"></div>
-        <div class="container">
-            <div class="hero-content">
-                <span class="hero-badge">NUEVA COLECCIÓN</span>
-                <h1 class="hero-title fade-in">TU ESTILO. TU RITMO.</h1>
-                <p class="hero-subtitle fade-in">Indumentaria deportiva que te acompaña en cada movimiento. Diseño urbano, calidad premium.</p>
-                <div class="hero-buttons fade-in">
-                    <a href="#productos" class="btn-primary">Ver Catálogo</a>
-                    <a href="#promos" class="btn-secondary">Ofertas Especiales</a>
-                </div>
+        <div class="hero-video-bg" id="heroBg">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content fade-in">
+                <span class="hero-badge">GIMNASIO DE ALTO RENDIMIENTO</span>
+                <h1 class="hero-slogan">TRANSFORMA TU CUERPO.<br>TRANSFORMA TU VIDA.</h1>
+                <p class="hero-subtitle">Entrenamiento funcional, musculación y clases grupales. Todo lo que necesitás para alcanzar tus objetivos.</p>
+                <a href="#planes" class="btn-hero">Ver Planes y Precios</a>
             </div>
         </div>
     </section>
 
-    <!-- Categories Section -->
-    <section class="categories">
-        <div class="container">
-            <div class="categories-grid">
-                <div class="category-card fade-in">
-                    <div class="category-image" style="background: linear-gradient(135deg, #ff4081 0%, #c2185b 100%);">
-                        <span style="font-size: 4rem;">👔</span>
-                    </div>
-                    <h3>Mujer</h3>
-                </div>
-                <div class="category-card fade-in">
-                    <div class="category-image" style="background: linear-gradient(135deg, #00bcd4 0%, #00838f 100%);">
-                        <span style="font-size: 4rem;">👕</span>
-                    </div>
-                    <h3>Hombre</h3>
-                </div>
-                <div class="category-card fade-in">
-                    <div class="category-image" style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);">
-                        <span style="font-size: 4rem;">👖</span>
-                    </div>
-                    <h3>Accesorios</h3>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section class="products" id="productos">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Productos Destacados</h2>
-                <p>Lo último en moda deportiva</p>
-            </div>
-            <div class="products-grid">
-                <div class="product-card fade-in">
-                    <div class="product-badge">NUEVO</div>
-                    <div class="product-image" style="background: linear-gradient(135deg, #333 0%, #000 100%);">
-                        <span style="font-size: 4rem;">👕</span>
-                    </div>
-                    <h3>Remera Essential Fit</h3>
-                    <p class="product-desc">Tela transpirable, corte moderno</p>
-                    <div class="product-price">
-                        <span class="price-now">$12.500</span>
-                    </div>
-                    <button class="btn-add-cart" onclick="addToCart(1, 'Remera Essential Fit', 12500)">
-                        Agregar al Carrito
-                    </button>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-badge sale">-30%</div>
-                    <div class="product-image" style="background: linear-gradient(135deg, #e91e63 0%, #ad1457 100%);">
-                        <span style="font-size: 4rem;">👖</span>
-                    </div>
-                    <h3>Leggins Power Flex</h3>
-                    <p class="product-desc">Alta compresión, sujeción perfecta</p>
-                    <div class="product-price">
-                        <span class="price-now">$18.900</span>
-                        <span class="price-old">$27.000</span>
-                    </div>
-                    <button class="btn-add-cart" onclick="addToCart(2, 'Leggins Power Flex', 18900)">
-                        Agregar al Carrito
-                    </button>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-image" style="background: linear-gradient(135deg, #ff4081 0%, #f50057 100%);">
-                        <span style="font-size: 4rem;">🧥</span>
-                    </div>
-                    <h3>Buzo Runner Hoodie</h3>
-                    <p class="product-desc">Capucha ajustable, abrigado</p>
-                    <div class="product-price">
-                        <span class="price-now">$24.500</span>
-                    </div>
-                    <button class="btn-add-cart" onclick="addToCart(3, 'Buzo Runner Hoodie', 24500)">
-                        Agregar al Carrito
-                    </button>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-image" style="background: linear-gradient(135deg, #00bcd4 0%, #00838f 100%);">
-                        <span style="font-size: 4rem;">👟</span>
-                    </div>
-                    <h3>Zapatillas Urban Pro</h3>
-                    <p class="product-desc">Amortiguación premium</p>
-                    <div class="product-price">
-                        <span class="price-now">$35.900</span>
-                    </div>
-                    <button class="btn-add-cart" onclick="addToCart(4, 'Zapatillas Urban Pro', 35900)">
-                        Agregar al Carrito
-                    </button>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-image" style="background: linear-gradient(135deg, #4caf50 0%, #2e7d32 100%);">
-                        <span style="font-size: 4rem;">🎒</span>
-                    </div>
-                    <h3>Mochila Sport Bag</h3>
-                    <p class="product-desc">Resistente al agua, 25L</p>
-                    <div class="product-price">
-                        <span class="price-now">$14.500</span>
-                    </div>
-                    <button class="btn-add-cart" onclick="addToCart(5, 'Mochila Sport Bag', 14500)">
-                        Agregar al Carrito
-                    </button>
-                </div>
-                <div class="product-card fade-in">
-                    <div class="product-badge sale">-20%</div>
-                    <div class="product-image" style="background: linear-gradient(135deg, #673ab7 0%, #4527a0 100%);">
-                        <span style="font-size: 4rem;">👔</span>
-                    </div>
-                    <h3>Top Crop Training</h3>
-                    <p class="product-desc">Suave, elástico, perfect fit</p>
-                    <div class="product-price">
-                        <span class="price-now">$8.900</span>
-                        <span class="price-old">$11.000</span>
-                    </div>
-                    <button class="btn-add-cart" onclick="addToCart(6, 'Top Crop Training', 8900)">
-                        Agregar al Carrito
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Promos Section -->
-    <section class="promos" id="promos">
-        <div class="container">
-            <div class="section-header fade-in">
-                <h2>Promociones</h2>
-                <p>Ofertas especiales por tiempo limitado</p>
-            </div>
-            <div class="promos-grid">
-                <div class="promo-card fade-in">
-                    <div class="promo-badge">3x2</div>
-                    <h3>Llevá 3, Pagá 2</h3>
-                    <p>En toda la sección de remeras y tops. Promoción válida hasta agotar stock.</p>
-                    <a href="#productos" class="btn-promo">Aprovechar Oferta</a>
-                </div>
-                <div class="promo-card featured fade-in">
-                    <div class="promo-badge">50%</div>
-                    <h3>Pack Combo</h3>
-                    <p>Leggins + Top + Mochila por solo $35.000. Ahorrá más de $15.000</p>
-                    <a href="#productos" class="btn-promo">Ver Pack</a>
-                </div>
-                <div class="promo-card fade-in">
-                    <div class="promo-badge">Envío</div>
-                    <h3>Envío Gratis</h3>
-                    <p>En compras superiores a $30.000. Zona GBA y CABA.</p>
-                    <a href="#productos" class="btn-promo">Comprar Ahora</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
+    <!-- Quiénes Somos Section -->
     <section class="about" id="nosotros">
         <div class="container">
             <div class="about-wrapper">
+                <div class="about-image fade-in">
+                    <div class="orange-line-deco top-left"></div>
+                    <div class="about-img-placeholder" id="aboutImg"></div>
+                </div>
                 <div class="about-content fade-in">
-                    <h2>Nosotros</h2>
-                    <p>UrbanFit nace de la pasión por el movimiento y el estilo. Creemos que la indumentaria deportiva debe combinar funcionalidad, calidad y diseño urbano.</p>
-                    <p>Cada producto está pensado para acompañarte en tu día a día, desde el gimnasio hasta la calle. Usamos materiales de primera calidad y tecnología de última generación en todos nuestros productos.</p>
-                    <div class="about-features">
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Envío rápido a todo el país</span>
+                    <div class="orange-line-deco top-right"></div>
+                    <h2>Quiénes Somos</h2>
+                    <p class="lead">UrbanFit es más que un gimnasio. Somos una comunidad de personas comprometidas con su bienestar físico y mental.</p>
+                    <p>Con más de 10 años de experiencia, ofrecemos un espacio equipado con la última tecnología, profesionales certificados y un ambiente motivador para que logres tus metas fitness.</p>
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">🏋️</div>
+                            <h3>Equipamiento Pro</h3>
+                            <p>Máquinas de última generación y peso libre completo</p>
                         </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Garantía de calidad</span>
+                        <div class="value-item">
+                            <div class="value-icon">👨‍🏫</div>
+                            <h3>Entrenadores Cert.</h3>
+                            <p>Staff profesional con certificaciones internacionales</p>
                         </div>
-                        <div class="feature">
-                            <span class="feature-icon">✓</span>
-                            <span>Devolución gratis</span>
+                        <div class="value-item">
+                            <div class="value-icon">🎯</div>
+                            <h3>Resultados</h3>
+                            <p>Planes personalizados adaptados a tus objetivos</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-image fade-in">
-                    <div class="image-placeholder" id="teamImage" style="background: linear-gradient(135deg, #ff4081 0%, #c2185b 100%); border-radius: 20px; height: 100%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clases Section -->
+    <section class="classes" id="clases">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestras Clases</h2>
+                <p>Variedad de disciplinas para todos los niveles</p>
+            </div>
+            
+            <div class="classes-grid">
+                <div class="class-card fade-in" data-class="functional">
+                    <div class="class-image-placeholder" style="background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);">
+                        <span style="font-size: 4rem;">🏃</span>
+                    </div>
+                    <div class="class-info">
+                        <h3>Funcional</h3>
+                        <p class="class-desc">Entrenamiento de alta intensidad con ejercicios variados</p>
+                        <div class="class-schedule">
+                            <span class="schedule-item">📅 Lun-Mié-Vie 7:00 | 18:00</span>
+                            <span class="schedule-item">⏱️ 60 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-card fade-in" data-class="strength">
+                    <div class="class-image-placeholder" style="background: linear-gradient(135deg, #d32f2f 0%, #b71c1c 100%);">
+                        <span style="font-size: 4rem;">💪</span>
+                    </div>
+                    <div class="class-info">
+                        <h3>Musculación</h3>
+                        <p class="class-desc">Desarrollo muscular con peso libre y máquinas</p>
+                        <div class="class-schedule">
+                            <span class="schedule-item">📅 Todos los días</span>
+                            <span class="schedule-item">⏱️ Libre</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-card fade-in" data-class="crossfit">
+                    <div class="class-image-placeholder" style="background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);">
+                        <span style="font-size: 4rem;">🔥</span>
+                    </div>
+                    <div class="class-info">
+                        <h3>CrossFit</h3>
+                        <p class="class-desc">WODs intensos para máximo rendimiento</p>
+                        <div class="class-schedule">
+                            <span class="schedule-item">📅 Mar-Jue-Sáb 8:00 | 19:00</span>
+                            <span class="schedule-item">⏱️ 60 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-card fade-in" data-class="boxing">
+                    <div class="class-image-placeholder" style="background: linear-gradient(135deg, #212121 0%, #424242 100%);">
+                        <span style="font-size: 4rem;">🥊</span>
+                    </div>
+                    <div class="class-info">
+                        <h3>Boxing</h3>
+                        <p class="class-desc">Técnica de boxeo y acondicionamiento físico</p>
+                        <div class="class-schedule">
+                            <span class="schedule-item">📅 Lun-Mié-Vie 19:00</span>
+                            <span class="schedule-item">⏱️ 60 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-card fade-in" data-class="yoga">
+                    <div class="class-image-placeholder" style="background: linear-gradient(135deg, #7b1fa2 0%, #4a148c 100%);">
+                        <span style="font-size: 4rem;">🧘</span>
+                    </div>
+                    <div class="class-info">
+                        <h3>Yoga & Stretching</h3>
+                        <p class="class-desc">Flexibilidad, equilibrio y relajación</p>
+                        <div class="class-schedule">
+                            <span class="schedule-item">📅 Mar-Jue 9:00 | 20:00</span>
+                            <span class="schedule-item">⏱️ 60 min</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="class-card fade-in" data-class="spinning">
+                    <div class="class-image-placeholder" style="background: linear-gradient(135deg, #00897b 0%, #004d40 100%);">
+                        <span style="font-size: 4rem;">🚴</span>
+                    </div>
+                    <div class="class-info">
+                        <h3>Spinning</h3>
+                        <p class="class-desc">Cardio intenso con música energizante</p>
+                        <div class="class-schedule">
+                            <span class="schedule-item">📅 Lun-Mié-Vie 8:00 | 18:30</span>
+                            <span class="schedule-item">⏱️ 45 min</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instalaciones Section -->
+    <section class="facilities" id="instalaciones">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Nuestras Instalaciones</h2>
+                <p>Espacios diseñados para tu mejor experiencia</p>
+            </div>
+            
+            <div class="facilities-grid">
+                <div class="facility-card fade-in">
+                    <div class="facility-img-placeholder" id="facility1"></div>
+                    <h3>Zona de Pesas</h3>
+                    <p>Equipamiento completo para musculación y fuerza</p>
+                </div>
+                <div class="facility-card fade-in">
+                    <div class="facility-img-placeholder" id="facility2"></div>
+                    <h3>Sala de Funcional</h3>
+                    <p>Espacio amplio para clases grupales e individuales</p>
+                </div>
+                <div class="facility-card fade-in">
+                    <div class="facility-img-placeholder" id="facility3"></div>
+                    <h3>Cardio Zone</h3>
+                    <p>Cintas, elípticas y bicicletas con pantallas</p>
+                </div>
+                <div class="facility-card fade-in">
+                    <div class="facility-img-placeholder" id="facility4"></div>
+                    <h3>Vestuarios</h3>
+                    <p>Duchas, lockers y amenities de primera</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Planes Section -->
+    <section class="plans" id="planes">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Planes y Precios</h2>
+                <p>Elegí el plan que mejor se adapte a vos</p>
+            </div>
+            <div class="plans-grid">
+                <div class="plan-card fade-in">
+                    <h3>MENSUAL</h3>
+                    <div class="plan-price">
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">45.000</span>
+                        <span class="price-period">/mes</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Acceso a todas las clases</li>
+                        <li>✓ Uso de todas las instalaciones</li>
+                        <li>✓ Plan de entrenamiento básico</li>
+                        <li>✓ Aplicación móvil</li>
+                    </ul>
+                    <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20info%20sobre%20el%20plan%20Mensual" class="btn-plan" target="_blank">Quiero este plan</a>
+                </div>
+
+                <div class="plan-card featured fade-in">
+                    <div class="plan-badge">MÁS POPULAR</div>
+                    <h3>TRIMESTRAL</h3>
+                    <div class="plan-price">
+                        <span class="price-old">$135.000</span>
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">120.000</span>
+                        <span class="price-period">/3 meses</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Todo del plan mensual</li>
+                        <li>✓ Plan nutricional personalizado</li>
+                        <li>✓ 2 sesiones de evaluación física</li>
+                        <li>✓ Descuento en suplementos</li>
+                        <li>✓ Invitá 1 amigo gratis/mes</li>
+                    </ul>
+                    <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20info%20sobre%20el%20plan%20Trimestral" class="btn-plan btn-plan-featured" target="_blank">Quiero este plan</a>
+                </div>
+
+                <div class="plan-card fade-in">
+                    <h3>ANUAL</h3>
+                    <div class="plan-price">
+                        <span class="price-old">$540.000</span>
+                        <span class="price-currency">$</span>
+                        <span class="price-amount">420.000</span>
+                        <span class="price-period">/año</span>
+                    </div>
+                    <ul class="plan-features">
+                        <li>✓ Todo del plan trimestral</li>
+                        <li>✓ Entrenamiento personalizado (4 sesiones/mes)</li>
+                        <li>✓ Evaluaciones físicas mensuales</li>
+                        <li>✓ Seguimiento nutricional permanente</li>
+                        <li>✓ Acceso a clases VIP</li>
+                        <li>✓ Invitá 2 amigos gratis/mes</li>
+                    </ul>
+                    <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20info%20sobre%20el%20plan%20Anual" class="btn-plan" target="_blank">Quiero este plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Lo que dicen nuestros miembros</h2>
+                <p>Historias reales de transformación</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Bajé 15 kilos en 6 meses. Los entrenadores son increíbles, te motivan y te cuidan. ¡El mejor gym de zona!"</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" id="avatar1"></div>
+                        <div class="author-info">
+                            <h4>Martín Rodríguez</h4>
+                            <p>Miembro desde 2023</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Me encanta la variedad de clases. El ambiente es súper motivador y las instalaciones impecables. Recomendadísimo."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" id="avatar2"></div>
+                        <div class="author-info">
+                            <h4>Laura Fernández</h4>
+                            <p>Miembro desde 2022</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p class="testimonial-text">"Los profes de CrossFit son de otro nivel. Mejoré mi fuerza y resistencia como nunca. Vale cada peso."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar" id="avatar3"></div>
+                        <div class="author-info">
+                            <h4>Diego Gómez</h4>
+                            <p>Miembro desde 2024</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -240,56 +334,72 @@
     <!-- Contact Section -->
     <section class="contact" id="contacto">
         <div class="container">
-            <div class="section-header fade-in">
-                <h2>Contacto</h2>
-                <p>¿Tenés alguna consulta? Escribinos</p>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">📱</div>
-                    <h3>WhatsApp</h3>
-                    <p>+54 9 11 8765-4321</p>
-                    <a href="https://wa.me/5491187654321?text=Hola%20UrbanFit" class="btn-contact" target="_blank">Escribir</a>
+            <div class="contact-wrapper">
+                <div class="contact-info fade-in">
+                    <h2>Visitanos o contactanos</h2>
+                    <p>Estamos para ayudarte a comenzar tu transformación</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="contact-icon">📍</span>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Av. Corrientes 1234, CABA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📱</span>
+                            <div>
+                                <h4>WhatsApp</h4>
+                                <p>+54 9 11 0000-0000</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">⏰</span>
+                            <div>
+                                <h4>Horarios</h4>
+                                <p>Lun-Vie: 6:00 - 23:00<br>Sáb-Dom: 8:00 - 20:00</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <span class="contact-icon">📧</span>
+                            <div>
+                                <h4>Email</h4>
+                                <p>info@urbanfit.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="https://wa.me/5491100000000?text=Hola!%20Quiero%20info%20sobre%20UrbanFit" class="btn-primary btn-whatsapp" target="_blank">
+                        💬 Reservá tu clase de prueba gratis
+                    </a>
                 </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">📧</div>
-                    <h3>Email</h3>
-                    <p>hola@urbanfit.com.ar</p>
-                    <a href="mailto:hola@urbanfit.com.ar" class="btn-contact">Enviar Email</a>
-                </div>
-                <div class="contact-card fade-in">
-                    <div class="contact-icon">📍</div>
-                    <h3>Sucursal</h3>
-                    <p>Av. Santa Fe 2500, CABA</p>
-                    <a href="#" class="btn-contact">Ver Mapa</a>
+                <div class="contact-form-wrapper fade-in">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Dejanos tu consulta</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Consulta</button>
+                    </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Cart Modal -->
-    <div id="cartModal" class="cart-modal">
-        <div class="cart-content">
-            <div class="cart-header">
-                <h3>Carrito de Compras</h3>
-                <button class="cart-close" onclick="closeCart()">&times;</button>
-            </div>
-            <div id="cartItems" class="cart-items">
-                <p>El carrito está vacío</p>
-            </div>
-            <div class="cart-footer">
-                <div class="cart-total">
-                    <strong>Total: $<span id="cartTotal">0</span></strong>
-                </div>
-                <button class="btn-checkout" onclick="checkout()">
-                    Proceder al Pago
-                </button>
-            </div>
-        </div>
-    </div>
-
     <!-- WhatsApp Floating Button -->
-    <a href="https://wa.me/5491187654321?text=Hola%20UrbanFit" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <a href="https://wa.me/5491100000000" class="whatsapp-float" target="_blank" aria-label="WhatsApp">
         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M16 2C8.268 2 2 8.268 2 16C2 19.184 3.24 22.08 5.312 24.224L2 30L8.032 26.88C10.096 28.832 12.96 30 16 30C23.732 30 30 23.732 30 16C30 8.268 23.732 2 16 2Z" fill="#25D366"/>
             <path d="M16.8 21.6C15.2 21.6 13.6 21.2 12.4 20.4L9.2 21.6L10.4 18.4C9.6 17.2 9.2 15.6 9.2 14C9.2 10.8 12 8 15.2 8C18.4 8 21.2 10.8 21.2 14C21.2 17.2 18.4 21.6 16.8 21.6Z" fill="white"/>
@@ -301,46 +411,44 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <div class="footer-logo">
-                        <span class="logo-icon">🏃</span>
-                        <span>UrbanFit</span>
-                    </div>
-                    <p>Indumentaria deportiva urbana. Diseño, calidad y estilo.</p>
+                    <h3>UrbanFit</h3>
+                    <p>Tu gimnasio de confianza. Transformamos vidas desde 2014.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook">📘</a>
                         <a href="#" aria-label="Instagram">📷</a>
-                        <a href="#" aria-label="TikTok">🎵</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
                     </div>
                 </div>
                 <div class="footer-section">
-                    <h4>Comprar</h4>
+                    <h4>Enlaces</h4>
                     <ul>
-                        <li><a href="#productos">Mujer</a></li>
-                        <li><a href="#productos">Hombre</a></li>
-                        <li><a href="#productos">Accesorios</a></li>
-                        <li><a href="#promos">Promociones</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Info</h4>
-                    <ul>
-                        <li><a href="#">Envíos</a></li>
-                        <li><a href="#">Devoluciones</a></li>
-                        <li><a href="#">Preguntas Frecuentes</a></li>
+                        <li><a href="#nosotros">Quiénes Somos</a></li>
+                        <li><a href="#clases">Clases</a></li>
+                        <li><a href="#planes">Planes</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contacto</h4>
+                    <h4>Clases</h4>
                     <ul>
-                        <li>📱 +54 9 11 8765-4321</li>
-                        <li>📧 hola@urbanfit.com.ar</li>
-                        <li>📍 Av. Santa Fe 2500, CABA</li>
+                        <li><a href="#clases">Funcional</a></li>
+                        <li><a href="#clases">CrossFit</a></li>
+                        <li><a href="#clases">Boxing</a></li>
+                        <li><a href="#clases">Yoga</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Horarios</h4>
+                    <ul>
+                        <li>Lun-Vie: 6:00 - 23:00</li>
+                        <li>Sáb: 8:00 - 20:00</li>
+                        <li>Dom: 8:00 - 20:00</li>
+                        <li>📱 +54 9 11 0000-0000</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 UrbanFit. Todos los derechos reservados.</p>
+                <p>&copy; 2024 UrbanFit Gym. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -348,4 +456,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-

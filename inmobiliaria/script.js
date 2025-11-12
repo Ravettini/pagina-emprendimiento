@@ -83,7 +83,7 @@ if (contactForm) {
         const message = formData.get('message');
         
         const whatsappMessage = `Hola! Me llamo ${name}.\n\nEmail: ${email}\nTeléfono: ${phone}\nInterés: ${interest}\n\nMensaje: ${message}`;
-        const whatsappUrl = `https://wa.me/5491123456789?text=${encodeURIComponent(whatsappMessage)}`;
+        const whatsappUrl = `https://wa.me/5491100000000?text=${encodeURIComponent(whatsappMessage)}`;
         
         window.open(whatsappUrl, '_blank');
         alert('¡Gracias por tu consulta! Redirigiendo a WhatsApp...');
