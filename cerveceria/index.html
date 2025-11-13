@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neper Cerveza — Artesanal Premium</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="fotos y logo/logo_solo-removebg-preview.png" type="image/png">
+</head>
+<body>
+    <header class="site-header" id="inicio">
+        <nav class="navbar" aria-label="Principal">
+            <div class="container nav-container">
+                <a class="brand" href="#inicio">
+                    <img src="fotos y logo/logo_con_letras-removebg-preview.png" alt="Neper Cerveza" class="brand-logo" loading="lazy">
+                </a>
+                <button class="menu-toggle" aria-expanded="false" aria-controls="nav-menu">Menú</button>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#productos">Productos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+                <a href="#productos" class="btn btn-outline">Ver productos</a>
+            </div>
+        </nav>
+
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-backdrop"></div>
+            <div class="hero-product">
+                <img src="fotos y logo/ipa-removebg-preview.png" alt="Botella de Neper IPA" loading="lazy">
+                <div class="glow"></div>
+            </div>
+            <div class="container hero-content">
+                <h1 id="hero-title">Cerveza artesanal, sin vueltas.</h1>
+                <p>Recetas nacidas en Córdoba, combinación precisa de maltas, lúpulos frescos y la dedicación de nuestro equipo.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#productos">Explorar productos</a>
+                    <a class="btn btn-ghost" href="#nosotros">Conocenos</a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+    <main>
+        <section class="section products" id="productos" aria-labelledby="titulo-productos">
+            <div class="container">
+                <header class="section-header">
+                    <h2 id="titulo-productos">Nuestra línea de cervezas</h2>
+                    <p>Variedades pensadas para cada momento. Descubrí aromas, intensidades y maridajes que sorprenden.</p>
+                </header>
+                <div class="product-grid" role="list">
+                    <article class="product-card" role="listitem">
+                        <img src="fotos y logo/apa-removebg-preview.png" alt="Neper APA" loading="lazy">
+                        <div class="product-info">
+                            <h3>American Pale Ale</h3>
+                            <p>Cítrica y refrescante, con notas a pomelo y final limpio.</p>
+                            <ul>
+                                <li>ABV 5.5%</li>
+                                <li>IBU 35</li>
+                                <li>Estilo: APA</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="product-card" role="listitem">
+                        <img src="fotos y logo/ipa-removebg-preview.png" alt="Neper IPA" loading="lazy">
+                        <div class="product-info">
+                            <h3>India Pale Ale</h3>
+                            <p>Lúpulos patagónicos, intensidad aromática y amargor elegante.</p>
+                            <ul>
+                                <li>ABV 6.2%</li>
+                                <li>IBU 55</li>
+                                <li>Estilo: IPA</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="product-card" role="listitem">
+                        <img src="fotos y logo/irish_red-removebg-preview.png" alt="Neper Irish Red" loading="lazy">
+                        <div class="product-info">
+                            <h3>Irish Red</h3>
+                            <p>Maltosa, con caramelo suave y final aterciopelado.</p>
+                            <ul>
+                                <li>ABV 5.0%</li>
+                                <li>IBU 25</li>
+                                <li>Estilo: Irish Red</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="product-card" role="listitem">
+                        <img src="fotos y logo/stout-removebg-preview.png" alt="Neper Stout" loading="lazy">
+                        <div class="product-info">
+                            <h3>Oatmeal Stout</h3>
+                            <p>Chocolate amargo, espresso y textura cremosa gracias a la avena.</p>
+                            <ul>
+                                <li>ABV 6.0%</li>
+                                <li>IBU 40</li>
+                                <li>Estilo: Stout</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="product-card" role="listitem">
+                        <img src="fotos y logo/honerginger-removebg-preview.png" alt="Neper Honey Ginger" loading="lazy">
+                        <div class="product-info">
+                            <h3>Honey Ginger</h3>
+                            <p>Miel serrana y jengibre fresco en equilibrio alrededor del dulzor.</p>
+                            <ul>
+                                <li>ABV 5.8%</li>
+                                <li>IBU 22</li>
+                                <li>Estilo: Specialty Ale</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="product-card" role="listitem">
+                        <img src="fotos y logo/cerveza_dorada-removebg-preview.png" alt="Neper Lager Dorada" loading="lazy">
+                        <div class="product-info">
+                            <h3>Lager Dorada</h3>
+                            <p>Fermentación baja, espuma sedosa y gran refrescancia.</p>
+                            <ul>
+                                <li>ABV 4.8%</li>
+                                <li>IBU 18</li>
+                                <li>Estilo: Lager</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section partners" aria-labelledby="titulo-partners">
+            <div class="container partners-container">
+                <header class="section-header">
+                    <h2 id="titulo-partners">Dónde disfrutar Neper</h2>
+                    <p>Opciones flexibles para llevar nuestra cerveza a tus momentos, tu bar o tu negocio.</p>
+                </header>
+                <div class="partner-grid">
+                    <article class="partner-card">
+                        <h3>Con amigos</h3>
+                        <p>Contratá nuestro servicio de choperas. Nos encargamos del armado, la logística y el retiro.</p>
+                    </article>
+                    <article class="partner-card">
+                        <h3>Tenés un bar</h3>
+                        <p>Armamos una propuesta comercial atractiva para que sorprendas a tus clientes con estilos únicos.</p>
+                    </article>
+                    <article class="partner-card">
+                        <h3>En lata</h3>
+                        <p>Disponemos de toda la línea en latas de 473cc, lista para acompañar cualquier momento.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section about" id="nosotros" aria-labelledby="titulo-nosotros">
+            <div class="container about-container">
+                <figure class="about-media">
+                    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=900&q=80" alt="Proceso artesanal de cerveza" loading="lazy">
+                </figure>
+                <div class="about-content">
+                    <h2 id="titulo-nosotros">Hacemos cerveza para quienes disfrutan cada detalle.</h2>
+                    <p>Neper Cerveza es una cervecería artesanal cordobesa. Loteamos pequeño, controlamos cada etapa y priorizamos ingredientes locales.</p>
+                    <ul class="about-values">
+                        <li>
+                            <span>Artesanal</span>
+                            <p>Elaboración en lotes cortos para asegurar frescura.</p>
+                        </li>
+                        <li>
+                            <span>Local</span>
+                            <p>Agua serrana y maltas nacionales seleccionadas.</p>
+                        </li>
+                        <li>
+                            <span>De calidad</span>
+                            <p>Fermentaciones controladas y degustaciones internas.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="section contact" id="contacto" aria-labelledby="titulo-contacto">
+            <div class="container contact-container">
+                <div class="contact-info">
+                    <h2 id="titulo-contacto">Contacto</h2>
+                    <p>¿Querés distribuir nuestras cervezas o reservar una mesa? Dejanos tu mensaje y te respondemos pronto.</p>
+                    <ul>
+                        <li><span>Dirección:</span> Parque Industrial Sierras Chicas, Córdoba</li>
+                        <li><span>Teléfono:</span> +54 9 351 000 0000</li>
+                        <li><span>Email:</span> hola@nepercerveza.com</li>
+                        <li class="contact-social"><span>Redes:</span> Instagram · Facebook · Spotify</li>
+                    </ul>
+                </div>
+                <form class="contact-form" aria-label="Formulario de contacto">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required>
+
+                    <label for="email">Email</label>
+                    <input id="email" name="email" type="email" placeholder="tuemail@dominio.com" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Contanos qué querés saber" required></textarea>
+
+                    <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <img src="fotos y logo/logo_solo-removebg-preview.png" alt="Neper" class="footer-logo" loading="lazy">
+            <nav class="footer-nav" aria-label="Secundario">
+                <a href="#nosotros">Nosotros</a>
+                <a href="#productos">Productos</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+            <small>© 2025 Neper Cerveza. Todos los derechos reservados.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

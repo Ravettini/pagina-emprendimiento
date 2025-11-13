@@ -110,33 +110,120 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Contact Form Handler
-const contactForm = document.getElementById('contactForm');
-if (contactForm) {
-    contactForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Get form data
-        const formData = new FormData(this);
-        const name = formData.get('name');
-        const email = formData.get('email');
-        const phone = formData.get('phone');
-        const message = formData.get('message');
-        
-        // Create WhatsApp message
-        const whatsappMessage = `Hola! Me llamo ${name}.\n\nEmail: ${email}\nTeléfono: ${phone}\n\nMensaje: ${message}`;
-        const whatsappUrl = `https://wa.me/5491161839587?text=${encodeURIComponent(whatsappMessage)}`;
-        
-        // Open WhatsApp
-        window.open(whatsappUrl, '_blank');
-        
-        // Show success message
-        alert('¡Gracias por tu mensaje! Redirigiendo a WhatsApp...');
-        
-        // Reset form
-        this.reset();
+const priceWrappers = document.querySelectorAll('.service-price');
+const maintenanceSpans = document.querySelectorAll('.maintenance-amount');
+
+function formatAmount(value, locale) {
+    return new Intl.NumberFormat(locale, { maximumFractionDigits: 0 }).format(value);
+}
+
+function updatePricing(region) {
+    const isArgentina = region === 'ar';
+    const currencySymbol = isArgentina ? '$' : 'US$';
+    const locale = isArgentina ? 'es-AR' : 'en-US';
+
+    priceWrappers.forEach(wrapper => {
+        const currencySpan = wrapper.querySelector('.price-currency');
+        const amountSpan = wrapper.querySelector('.price-amount');
+        const oldSpan = wrapper.querySelector('.price-old');
+
+        if (!amountSpan) return;
+
+        const value = Number(amountSpan.dataset[isArgentina ? 'priceArs' : 'priceUsd']);
+        const formatted = formatAmount(value, locale);
+
+        if (currencySpan) {
+            currencySpan.textContent = currencySymbol;
+        }
+        amountSpan.textContent = formatted;
+
+        if (oldSpan) {
+            const oldValueRaw = oldSpan.dataset[isArgentina ? 'priceOldArs' : 'priceOldUsd'];
+            if (oldValueRaw) {
+                const oldFormatted = formatAmount(Number(oldValueRaw), locale);
+                oldSpan.textContent = `${currencySymbol}${oldFormatted}`;
+                oldSpan.style.display = '';
+            } else {
+                oldSpan.style.display = 'none';
+            }
+        }
+    });
+
+    maintenanceSpans.forEach(span => {
+        const value = Number(span.dataset[isArgentina ? 'priceArs' : 'priceUsd']);
+        const formatted = formatAmount(value, locale);
+        span.textContent = `${currencySymbol}${formatted}/mes`;
     });
 }
+
+function fallbackRegion() {
+    return navigator.language && navigator.language.toLowerCase().includes('es-ar') ? 'ar' : 'intl';
+}
+
+function detectRegion() {
+    const callbackName = `ipapiCallback_${Date.now()}`;
+    const script = document.createElement('script');
+    let handled = false;
+
+    const cleanup = () => {
+        delete window[callbackName];
+        if (script.parentNode) {
+            script.parentNode.removeChild(script);
+        }
+    };
+
+    window[callbackName] = (data) => {
+        handled = true;
+        cleanup();
+        const region = data && data.country_code === 'AR' ? 'ar' : 'intl';
+        updatePricing(region);
+    };
+
+    script.src = `https://ipapi.co/json/?callback=${callbackName}`;
+    script.onerror = () => {
+        cleanup();
+        updatePricing(fallbackRegion());
+    };
+
+    document.body.appendChild(script);
+
+    setTimeout(() => {
+        if (!handled) {
+            cleanup();
+            updatePricing(fallbackRegion());
+        }
+    }, 2000);
+}
+
+detectRegion();
+ 
+ // Contact Form Handler
+ const contactForm = document.getElementById('contactForm');
+ if (contactForm) {
+     contactForm.addEventListener('submit', function(e) {
+         e.preventDefault();
+         
+         // Get form data
+         const formData = new FormData(this);
+         const name = formData.get('name');
+         const email = formData.get('email');
+         const phone = formData.get('phone');
+         const message = formData.get('message');
+         
+         // Create WhatsApp message
+         const whatsappMessage = `Hola! Me llamo ${name}.\n\nEmail: ${email}\nTeléfono: ${phone}\n\nMensaje: ${message}`;
+         const whatsappUrl = `https://wa.me/5491161839587?text=${encodeURIComponent(whatsappMessage)}`;
+         
+         // Open WhatsApp
+         window.open(whatsappUrl, '_blank');
+         
+         // Show success message
+         alert('¡Gracias por tu mensaje! Redirigiendo a WhatsApp...');
+         
+         // Reset form
+         this.reset();
+     });
+ }
 
 // Navbar Background on Scroll
 window.addEventListener('scroll', () => {

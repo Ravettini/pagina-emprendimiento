@@ -339,12 +339,7 @@ section {
 
 .section-header {
     text-align: center;
-    margin-bottom: 4rem;
-}
-
-.section-header h2 {
-    font-size: clamp(2rem, 4vw, 3rem);
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 /* Títulos en todas las secciones claras */
