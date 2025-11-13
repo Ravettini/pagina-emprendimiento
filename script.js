@@ -160,39 +160,64 @@ function fallbackRegion() {
     return navigator.language && navigator.language.toLowerCase().includes('es-ar') ? 'ar' : 'intl';
 }
 
-function detectRegion() {
-    const callbackName = `ipapiCallback_${Date.now()}`;
-    const script = document.createElement('script');
-    let handled = false;
+function jsonp(url, timeout = 2500) {
+    return new Promise((resolve, reject) => {
+        const callbackName = `jsonpCallback_${Date.now()}_${Math.floor(Math.random() * 1000)}`;
+        const script = document.createElement('script');
+        let settled = false;
 
-    const cleanup = () => {
-        delete window[callbackName];
-        if (script.parentNode) {
-            script.parentNode.removeChild(script);
-        }
-    };
+        const cleanup = () => {
+            delete window[callbackName];
+            if (script.parentNode) {
+                script.parentNode.removeChild(script);
+            }
+        };
 
-    window[callbackName] = (data) => {
-        handled = true;
-        cleanup();
-        const region = data && data.country_code === 'AR' ? 'ar' : 'intl';
-        updatePricing(region);
-    };
-
-    script.src = `https://ipapi.co/json/?callback=${callbackName}`;
-    script.onerror = () => {
-        cleanup();
-        updatePricing(fallbackRegion());
-    };
-
-    document.body.appendChild(script);
-
-    setTimeout(() => {
-        if (!handled) {
+        window[callbackName] = (data) => {
+            settled = true;
             cleanup();
-            updatePricing(fallbackRegion());
-        }
-    }, 2000);
+            resolve(data);
+        };
+
+        script.src = `${url}${url.includes('?') ? '&' : '?'}callback=${callbackName}`;
+        script.onerror = () => {
+            cleanup();
+            reject(new Error('JSONP load error'));
+        };
+
+        document.body.appendChild(script);
+
+        setTimeout(() => {
+            if (!settled) {
+                cleanup();
+                reject(new Error('JSONP timeout'));
+            }
+        }, timeout);
+    });
+}
+
+function detectRegion() {
+    jsonp('https://ipwho.is/')
+        .then(data => {
+            if (data && data.country_code === 'AR') {
+                updatePricing('ar');
+            } else {
+                updatePricing('intl');
+            }
+        })
+        .catch(() => {
+            jsonp('https://ipinfo.io/json')
+                .then(data => {
+                    if (data && data.country === 'AR') {
+                        updatePricing('ar');
+                    } else {
+                        updatePricing('intl');
+                    }
+                })
+                .catch(() => {
+                    updatePricing(fallbackRegion());
+                });
+        });
 }
 
 detectRegion();

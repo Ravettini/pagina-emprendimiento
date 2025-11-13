@@ -424,6 +424,7 @@ section {
 .price-currency {
     font-size: 1.5rem;
     vertical-align: top;
+    color: var(--color-green-blue);
 }
 
 .price-amount {
@@ -433,6 +434,9 @@ section {
 }
 
 .service-card.featured .price-amount {
+    color: var(--color-text);
+}
+.service-card.featured .price-currency {
     color: var(--color-text);
 }
 
